@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = Stamp::VERSION
   s.authors     = ["Fabio Neves"]
   s.email       = ["fabio.miguel.neves@gmail.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Stamp."
-  s.description = "TODO: Description of Stamp."
+  s.homepage    = "http://www.gihub.com/fneves/stamp"
+  s.summary     = "Reservation system."
+  s.description = "A rails reservation system engine that plugs into your application seamlessly"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
