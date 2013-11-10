@@ -26,24 +26,8 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="RVM: ruby-2.0.0-p247 [intouch]" project-jdk-type="RUBY_SDK">
     <output url="file://$PROJECT_DIR$/out" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>RVM: ruby-2.0.0-p0 [global]</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.16076294" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
 
