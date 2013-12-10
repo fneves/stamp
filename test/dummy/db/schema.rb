@@ -31,13 +31,6 @@ ActiveRecord::Schema.define(version: 20131103141810) do
     t.datetime "updated_at"
   end
 
-  create_table "stamp_rate_types", force: true do |t|
-    t.string   "description"
-    t.string   "period_duration"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "stamp_reservations", force: true do |t|
     t.integer  "customer_id"
     t.integer  "time_slot_id"
@@ -49,15 +42,20 @@ ActiveRecord::Schema.define(version: 20131103141810) do
 
   create_table "stamp_service_types", force: true do |t|
     t.string   "name"
-    t.integer  "rate_type_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "service_type_id"
   end
+
+  add_index "stamp_service_types", ["service_type_id"], name: "index_stamp_service_types_on_service_type_id"
 
   create_table "stamp_services", force: true do |t|
     t.string   "name"
-    t.integer  "service_type_id"
+    t.integer  "opening_hours"
+    t.integer  "closing_hours"
     t.string   "external_id"
+    t.integer  "period_size"
+    t.integer  "service_type_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -66,8 +64,7 @@ ActiveRecord::Schema.define(version: 20131103141810) do
     t.integer  "reservation_id"
     t.integer  "service_id"
     t.datetime "from"
-    t.integer  "unit"
-    t.integer  "rate_type_id"
+    t.integer  "units"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

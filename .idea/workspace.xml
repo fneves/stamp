@@ -2,40 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af4a6b21-77b2-455a-8e9e-369b973b6ea2" name="Default" comment="Adding reservations controller">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/stamp/api/v1/api_input_validations.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/controllers/stamp/reservations_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/stamp/api/v1/reservations_controller.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/stamp/reservations/availability.html.haml" afterPath="$PROJECT_DIR$/app/views/stamp/reservations/availability.html.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/models/stamp/pre_reservation_test.rb" afterPath="$PROJECT_DIR$/test/models/stamp/api/v1/pre_reservation_test.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/models/stamp/price_calendar_test.rb" afterPath="$PROJECT_DIR$/test/models/stamp/api/v1/price_calendar_test.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/models/stamp/price_rating_test.rb" afterPath="$PROJECT_DIR$/test/models/stamp/api/v1/price_rating_test.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/models/stamp/rate_type_test.rb" afterPath="$PROJECT_DIR$/test/models/stamp/api/v1/rate_type_test.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/models/stamp/reservation_test.rb" afterPath="$PROJECT_DIR$/test/models/stamp/api/v1/reservation_test.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/models/stamp/service_test.rb" afterPath="$PROJECT_DIR$/test/models/stamp/api/v1/service_test.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/models/stamp/service_type_test.rb" afterPath="$PROJECT_DIR$/test/models/stamp/api/v1/service_type_test.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/models/stamp/time_slot_test.rb" afterPath="$PROJECT_DIR$/test/models/stamp/api/v1/time_slot_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Rakefile" afterPath="$PROJECT_DIR$/Rakefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20131103141615_create_stamp_time_slots.rb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131103141615_create_stamp_rate_types.rb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131103141659_create_stamp_service_types.rb" afterPath="$PROJECT_DIR$/db/migrate/20131103141659_create_stamp_service_types.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131103141753_create_stamp_services.rb" afterPath="$PROJECT_DIR$/db/migrate/20131103141753_create_stamp_services.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stamp.gemspec" afterPath="$PROJECT_DIR$/stamp.gemspec" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stamp.iml" afterPath="$PROJECT_DIR$/stamp.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/dummy/db/schema.rb" afterPath="$PROJECT_DIR$/test/dummy/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/stamp/service.rb" afterPath="$PROJECT_DIR$/app/models/stamp/service.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/stamp/api/v1/services_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/stamp/api/v1/services_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="stamp.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/stamp.gemspec" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1383680207879" ignored="false" />
-    <file path="/Dummy.txt" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1386193193783" ignored="false" />
+    <file path="/Dummy.txt" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1386712496920" ignored="false" />
     <file path="/MIT-LICENSE" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1383481087976" ignored="false" />
-    <file path="/20131103141615_create_stamp_rate_types.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1383499546820" ignored="false" />
+    <file path="/20131103141615_create_stamp_rate_types.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1386713763992" ignored="false" />
     <file path="/20131103141639_create_stamp_time_slots.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1383488634373" ignored="false" />
     <file path="/engine.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1383496194248" ignored="false" />
     <file path="/pre_reservation.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1383497085517" ignored="false" />
     <file path="/20131103141810_create_stamp_pre_reservations.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1383499495777" ignored="false" />
     <file path="/Gemfile" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1384768442947" ignored="false" />
-    <file path="/routes.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1386280253401" ignored="false" />
-    <file path="/20131103141659_create_stamp_service_types.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1383499342955" ignored="false" />
+    <file path="/routes.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1386715024593" ignored="false" />
+    <file path="/20131103141659_create_stamp_service_types.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1386714262569" ignored="false" />
     <file path="/20131103141711_create_stamp_price_ratings.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1383498880477" ignored="false" />
-    <file path="/20131103141753_create_stamp_services.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1383499654935" ignored="false" />
+    <file path="/20131103141753_create_stamp_services.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1386714295888" ignored="false" />
     <file path="/development.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1383513380489" ignored="false" />
     <file path="/home_controller.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1383513473126" ignored="false" />
     <file path="/stamp.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1383514214109" ignored="false" />
@@ -43,7 +35,7 @@
     <file path="/_top_bar.html.haml" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1384101555145" ignored="false" />
     <file path="/Ruby Console" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1385912352422" ignored="false" />
     <file path="/reservations_controller.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1386274357726" ignored="false" />
-    <file path="/service.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1383606404580" ignored="false" />
+    <file path="/service.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1386714788782" ignored="false" />
     <file path="/application.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1383685745232" ignored="false" />
     <file path="/a.dummy" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1383686065267" ignored="false" />
     <file path="/20131105211538_add_devise_to_admin_users.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1383686282402" ignored="false" />
@@ -82,7 +74,7 @@
     <file path="/reservations_controller_test.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1386271336475" ignored="false" />
     <file path="/input_validations.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1386274240434" ignored="false" />
     <file path="/reservations_checks.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1386273503700" ignored="false" />
-    <file path="/services_controller.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1386281597801" ignored="false" />
+    <file path="/services_controller.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1386714948203" ignored="false" />
     <file path="/services_controller_test.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1386280929655" ignored="false" />
     <file path="/api_input_validations.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1386279972843" ignored="false" />
     <file path="/reservations_helper.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1386280010793" ignored="false" />
@@ -102,6 +94,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -138,7 +131,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -148,28 +140,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="reservations_helper.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/helpers/stamp/api/v1/reservations_helper.rb">
+      <file leaf-file-name="service.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/stamp/service.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="7" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
+            <state line="10" column="41" selection-start="226" selection-end="226" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="services_controller_test.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="services_controller_test.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/controllers/stamp/api/v1/services_controller_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="40" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0">
+            <state line="9" column="40" selection-start="255" selection-end="255" vertical-scroll-proportion="0.17928287">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="api_input_validations.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/helpers/stamp/api/v1/api_input_validations.rb">
+      <file leaf-file-name="20131103141753_create_stamp_services.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20131103141753_create_stamp_services.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0">
+            <state line="2" column="4" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20131103141659_create_stamp_service_types.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20131103141659_create_stamp_service_types.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="27" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -178,7 +179,16 @@
       <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="74" selection-start="163" selection-end="175" vertical-scroll-proportion="0.0">
+            <state line="7" column="67" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reservations_controller_test.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/controllers/stamp/api/v1/reservations_controller_test.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -193,46 +203,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/stamp/application_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="services_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="services_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/stamp/api/v1/services_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="57" selection-start="716" selection-end="716" vertical-scroll-proportion="0.5858586">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/dummy/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="32" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pre_reservation.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/stamp/pre_reservation.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="price_calendar.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/stamp/price_calendar.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="16" column="36" selection-start="698" selection-end="698" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -256,10 +230,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/../hubblin/app/views/profile/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/stamp/reservations_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/stamp/reservations/availability.html.erb" />
-        <option value="$PROJECT_DIR$/stamp.gemspec" />
         <option value="$PROJECT_DIR$/test/controllers/stamp/api/v1/util/input_validations.rb" />
         <option value="$PROJECT_DIR$/test/controllers/stamp/api/v1/util/reservations_checks.rb" />
         <option value="$PROJECT_DIR$/app/helpers/stamp/api/v1/reservations_checks.rb" />
@@ -268,10 +238,14 @@
         <option value="$PROJECT_DIR$/app/helpers/stamp/api/v1/api_input_validations.rb" />
         <option value="$PROJECT_DIR$/app/helpers/stamp/api/v1/reservations_helper.rb" />
         <option value="$PROJECT_DIR$/app/helpers/stamp/api/v1/services_helper.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/Rakefile" />
         <option value="$PROJECT_DIR$/test/controllers/stamp/api/v1/services_controller_test.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20131103141615_create_stamp_rate_types.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20131103141659_create_stamp_service_types.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20131103141753_create_stamp_services.rb" />
+        <option value="$PROJECT_DIR$/app/models/stamp/service.rb" />
         <option value="$PROJECT_DIR$/app/controllers/stamp/api/v1/services_controller.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
       </list>
     </option>
   </component>
@@ -283,9 +257,8 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
     <option name="width" value="1440" />
-    <option name="height" value="813" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -313,7 +286,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
@@ -361,29 +333,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dummy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stamp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stamp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dummy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="v1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -455,6 +405,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -473,14 +424,14 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
-    <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
+    <property name="FullScreen" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="dynamic.classpath" value="false" />
+    <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
     <property name="Ruby.ViewRefParam.DefaultExtension" value="html.erb" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -1008,13 +959,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="813" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3266187" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32587063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -1025,18 +976,19 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756132" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30703014" sideWeight="0.5021645" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30703014" sideWeight="0.670398" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4978355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756132" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1125,100 +1077,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/stamp/service_type.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/controllers/stamp/api/v1/reservations_controller_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="22" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/stamp/application_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/stamp/api/v1/services_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="6" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/stamp/pre_reservation.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/stamp/price_calendar.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/stamp/api/v1/reservations_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="7" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/stamp/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Rakefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="51" selection-start="725" selection-end="725" vertical-scroll-proportion="0.72053874">
-          <folding />
-        </state>
+        <state line="34" column="51" selection-start="725" selection-end="725" vertical-scroll-proportion="0.72053874" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/dummy/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="32" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="74" selection-start="163" selection-end="175" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/stamp/api/v1/reservations_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="75" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/controllers/stamp/api/v1/services_controller_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="40" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1230,9 +1096,115 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20131103141810_create_stamp_pre_reservations.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20131103141804_create_stamp_reservations.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="29" selection-start="162" selection-end="171" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20131103141711_create_stamp_price_ratings.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="246" selection-end="246" vertical-scroll-proportion="0.21912351">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://RailsDependency/#stamp">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>RailsDependency</ID>
+          <OriginalElement>#stamp</OriginalElement>
+          <nodes>
+            <node x="0.0" y="533.0">Stamp::RateType</node>
+            <node x="336.0" y="0.0">Stamp::PreReservation</node>
+            <node x="285.0" y="207.0">Stamp::TimeSlot</node>
+            <node x="248.0" y="370.0">Stamp::ServiceType</node>
+            <node x="0.0" y="370.0">Stamp::PriceRating</node>
+            <node x="0.0" y="207.0">Stamp::Reservation</node>
+            <node x="422.0" y="370.0">Stamp::PriceCalendar</node>
+            <node x="0.0" y="0.0">Stamp::Service</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="288.0" y="304.5" />
+          <SelectedNodes>
+            <node>Stamp::PreReservation</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Association fields</Category>
+            <Category>Migration fields</Category>
+            <Category>Own fields</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20131103141615_create_stamp_time_slots.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="57" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20131103141659_create_stamp_service_types.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="27" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20131103141753_create_stamp_services.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="4" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/stamp/service.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="41" selection-start="226" selection-end="226" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/stamp/api/v1/reservations_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="75" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/stamp/api/v1/services_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="57" selection-start="716" selection-end="716" vertical-scroll-proportion="0.5858586">
+        <state line="16" column="36" selection-start="698" selection-end="698" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="67" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/controllers/stamp/api/v1/reservations_controller_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/controllers/stamp/api/v1/services_controller_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="40" selection-start="255" selection-end="255" vertical-scroll-proportion="0.17928287">
           <folding />
         </state>
       </provider>

@@ -2,9 +2,13 @@ class CreateStampServices < ActiveRecord::Migration
   def change
     create_table :stamp_services do |t|
       t.string :name
-      t.references :service_type
+      t.integer :opening_hours
+      t.integer :closing_hours
       t.string :external_id
+      t.integer :period_size
+      t.references :service_type
       t.timestamps
     end
+    add_reference :stamp_service_types, :service_type, index: true
   end
 end
