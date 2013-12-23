@@ -11,6 +11,10 @@ module Stamp
       assert_response :success
     end
 
+    test "Booked slots for a single day" do
+      get :booked_slots, {service_id: "2", :use_route => :stamp}
+      assert_response :success
+    end
 
   end
 end

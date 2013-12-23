@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../hubblin/hubblin.iml" filepath="$PROJECT_DIR$/../hubblin/hubblin.iml" />
       <module fileurl="file://$PROJECT_DIR$/stamp.iml" filepath="$PROJECT_DIR$/stamp.iml" />
     </modules>
   </component>
