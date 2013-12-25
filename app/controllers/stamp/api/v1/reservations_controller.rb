@@ -3,7 +3,7 @@ require_dependency "stamp/application_controller"
 module Stamp
   module Api
     module V1
-      class ReservationsController < ApplicationController
+      class ReservationsController < Stamp::ApiController
         respond_to :json
 
         def index

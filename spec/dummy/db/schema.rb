@@ -50,6 +50,7 @@ ActiveRecord::Schema.define(version: 20131103141810) do
   add_index "stamp_service_types", ["service_type_id"], name: "index_stamp_service_types_on_service_type_id"
 
   create_table "stamp_services", force: true do |t|
+    t.integer  "owner_id"
     t.string   "name"
     t.integer  "opening_hours"
     t.integer  "closing_hours"

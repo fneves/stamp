@@ -1,28 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af4a6b21-77b2-455a-8e9e-369b973b6ea2" name="Default" comment="Updated database model to include more fields in the services entity.&#10;Removed rate_type from database model.&#10;Added booked_slots route.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.rvmrc" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/stamp/price_calendar.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/stamp/rate_type.rb" afterPath="" />
+    <list default="true" id="af4a6b21-77b2-455a-8e9e-369b973b6ea2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/dummy/db/development.sqlite3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/dummy/db/test.sqlite3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.rspec" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/stamp/api_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/dummy/log/development.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/factories.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/controllers/stamp/api/v1/services_controller_spec.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/stamp/concerns/services_support.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/spec_helper.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/dummy/log/test.log" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/controllers/stamp/api/v1/reservations_controller_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/controllers/stamp/api/v1/services_controller_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/fixtures/stamp/pre_reservations.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/fixtures/stamp/price_calendars.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/fixtures/stamp/price_ratings.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/fixtures/stamp/rate_types.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/fixtures/stamp/reservations.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/fixtures/stamp/service_types.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/fixtures/stamp/services.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/fixtures/stamp/time_slots.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/helpers/stamp/api/v1/reservations_helper_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/helpers/stamp/api/v1/services_helper_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/integration/navigation_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/models/stamp/api/v1/pre_reservation_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/models/stamp/api/v1/price_calendar_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/models/stamp/api/v1/price_rating_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/models/stamp/api/v1/rate_type_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/models/stamp/api/v1/reservation_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/models/stamp/api/v1/service_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/models/stamp/api/v1/service_type_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/models/stamp/api/v1/time_slot_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/stamp_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/test_helper.rb" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/dummy/README.rdoc" afterPath="$PROJECT_DIR$/spec/dummy/README.rdoc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/dummy/Rakefile" afterPath="$PROJECT_DIR$/spec/dummy/Rakefile" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/dummy/app/assets/images/.keep" afterPath="$PROJECT_DIR$/spec/dummy/app/assets/images/.keep" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/dummy/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/spec/dummy/app/assets/javascripts/application.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/dummy/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/spec/dummy/app/assets/stylesheets/application.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/dummy/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/spec/dummy/app/controllers/application_controller.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/dummy/app/controllers/concerns/.keep" afterPath="$PROJECT_DIR$/spec/dummy/app/controllers/concerns/.keep" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/dummy/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/spec/dummy/app/helpers/application_helper.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/dummy/app/mailers/.keep" afterPath="$PROJECT_DIR$/spec/dummy/app/mailers/.keep" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/dummy/app/models/.keep" afterPath="$PROJECT_DIR$/spec/dummy/app/models/.keep" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/dummy/app/models/concerns/.keep" afterPath="$PROJECT_DIR$/spec/dummy/app/models/concerns/.keep" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/dummy/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/spec/dummy/app/views/layouts/application.html.erb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/dummy/bin/bundle" afterPath="$PROJECT_DIR$/spec/dummy/bin/bundle" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/dummy/bin/rails" afterPath="$PROJECT_DIR$/spec/dummy/bin/rails" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/dummy/bin/rake" afterPath="$PROJECT_DIR$/spec/dummy/bin/rake" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/dummy/config.ru" afterPath="$PROJECT_DIR$/spec/dummy/config.ru" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/dummy/config/application.rb" afterPath="$PROJECT_DIR$/spec/dummy/config/application.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/dummy/config/boot.rb" afterPath="$PROJECT_DIR$/spec/dummy/config/boot.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/dummy/config/database.yml" afterPath="$PROJECT_DIR$/spec/dummy/config/database.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/dummy/config/environment.rb" afterPath="$PROJECT_DIR$/spec/dummy/config/environment.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/dummy/config/environments/development.rb" afterPath="$PROJECT_DIR$/spec/dummy/config/environments/development.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/dummy/config/environments/production.rb" afterPath="$PROJECT_DIR$/spec/dummy/config/environments/production.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/dummy/config/environments/test.rb" afterPath="$PROJECT_DIR$/spec/dummy/config/environments/test.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/dummy/config/initializers/backtrace_silencers.rb" afterPath="$PROJECT_DIR$/spec/dummy/config/initializers/backtrace_silencers.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/dummy/config/initializers/filter_parameter_logging.rb" afterPath="$PROJECT_DIR$/spec/dummy/config/initializers/filter_parameter_logging.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/dummy/config/initializers/inflections.rb" afterPath="$PROJECT_DIR$/spec/dummy/config/initializers/inflections.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/dummy/config/initializers/mime_types.rb" afterPath="$PROJECT_DIR$/spec/dummy/config/initializers/mime_types.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/dummy/config/initializers/secret_token.rb" afterPath="$PROJECT_DIR$/spec/dummy/config/initializers/secret_token.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/dummy/config/initializers/session_store.rb" afterPath="$PROJECT_DIR$/spec/dummy/config/initializers/session_store.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/dummy/config/initializers/wrap_parameters.rb" afterPath="$PROJECT_DIR$/spec/dummy/config/initializers/wrap_parameters.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/dummy/config/locales/en.yml" afterPath="$PROJECT_DIR$/spec/dummy/config/locales/en.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/dummy/config/routes.rb" afterPath="$PROJECT_DIR$/spec/dummy/config/routes.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/dummy/db/schema.rb" afterPath="$PROJECT_DIR$/spec/dummy/db/schema.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/dummy/lib/assets/.keep" afterPath="$PROJECT_DIR$/spec/dummy/lib/assets/.keep" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/dummy/log/.keep" afterPath="$PROJECT_DIR$/spec/dummy/log/.keep" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/dummy/public/404.html" afterPath="$PROJECT_DIR$/spec/dummy/public/404.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/dummy/public/422.html" afterPath="$PROJECT_DIR$/spec/dummy/public/422.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/dummy/public/500.html" afterPath="$PROJECT_DIR$/spec/dummy/public/500.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/dummy/public/favicon.ico" afterPath="$PROJECT_DIR$/spec/dummy/public/favicon.ico" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/stamp/pre_reservation.rb" afterPath="$PROJECT_DIR$/app/models/stamp/pre_reservation.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/stamp/price_rating.rb" afterPath="$PROJECT_DIR$/app/models/stamp/price_rating.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/stamp/reservation.rb" afterPath="$PROJECT_DIR$/app/models/stamp/reservation.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131103141753_create_stamp_services.rb" afterPath="$PROJECT_DIR$/db/migrate/20131103141753_create_stamp_services.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Rakefile" afterPath="$PROJECT_DIR$/Rakefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/stamp/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/stamp/application_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/stamp/engine.rb" afterPath="$PROJECT_DIR$/lib/stamp/engine.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/stamp/api/v1/reservations_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/stamp/api/v1/reservations_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/stamp/service.rb" afterPath="$PROJECT_DIR$/app/models/stamp/service.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/stamp/service_type.rb" afterPath="$PROJECT_DIR$/app/models/stamp/service_type.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/stamp/api/v1/services_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/stamp/api/v1/services_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/stamp/api/v1/services_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/stamp/api/v1/services_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stamp.gemspec" afterPath="$PROJECT_DIR$/stamp.gemspec" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stamp.iml" afterPath="$PROJECT_DIR$/stamp.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/stamp/time_slot.rb" afterPath="$PROJECT_DIR$/app/models/stamp/time_slot.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="stamp.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/stamp.gemspec" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1383680207879" ignored="false" />
-    <file path="/Dummy.txt" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1387798817431" ignored="false" />
+    <file path="/stamp.gemspec" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1387896845354" ignored="false" />
+    <file path="/Dummy.txt" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1387894860714" ignored="false" />
     <file path="/MIT-LICENSE" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1383481087976" ignored="false" />
     <file path="/20131103141615_create_stamp_rate_types.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1386713763992" ignored="false" />
     <file path="/20131103141639_create_stamp_time_slots.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1383488634373" ignored="false" />
@@ -33,15 +102,15 @@
     <file path="/routes.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1386715024593" ignored="false" />
     <file path="/20131103141659_create_stamp_service_types.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1386714262569" ignored="false" />
     <file path="/20131103141711_create_stamp_price_ratings.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1383498880477" ignored="false" />
-    <file path="/20131103141753_create_stamp_services.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1386714295888" ignored="false" />
+    <file path="/20131103141753_create_stamp_services.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1387984715425" ignored="false" />
     <file path="/development.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1383513380489" ignored="false" />
     <file path="/home_controller.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1383513473126" ignored="false" />
     <file path="/stamp.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1383514214109" ignored="false" />
     <file path="/application.html.haml" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1383602303516" ignored="false" />
     <file path="/_top_bar.html.haml" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1384101555145" ignored="false" />
     <file path="/Ruby Console" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1385912352422" ignored="false" />
-    <file path="/reservations_controller.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1386274357726" ignored="false" />
-    <file path="/service.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1387800069705" ignored="false" />
+    <file path="/reservations_controller.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1387802604715" ignored="false" />
+    <file path="/service.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1387984774392" ignored="false" />
     <file path="/application.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1383685745232" ignored="false" />
     <file path="/a.dummy" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1383686065267" ignored="false" />
     <file path="/20131105211538_add_devise_to_admin_users.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1383686282402" ignored="false" />
@@ -60,7 +129,7 @@
     <file path="/new.html.haml" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1384763380476" ignored="false" />
     <file path="/new.html.erb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1385302713383" ignored="false" />
     <file path="/_footer.html.erb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1384766862756" ignored="false" />
-    <file path="/fragment.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1385307673488" ignored="false" />
+    <file path="/fragment.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1387983338954" ignored="false" />
     <file path="/after_signup_controller.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1385914754401" ignored="false" />
     <file path="/20131120204058_add_profile_image_to_user_profile.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1384980197917" ignored="false" />
     <file path="/20131120203923_create_user_profile.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1385305467811" ignored="false" />
@@ -71,7 +140,7 @@
     <file path="/profile.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1385414917627" ignored="false" />
     <file path="/profile_controller.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1385415333989" ignored="false" />
     <file path="/show.html.erb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1385914655955" ignored="false" />
-    <file path="/application_controller.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1385414642271" ignored="false" />
+    <file path="/application_controller.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1387802266971" ignored="false" />
     <file path="/20131120203923_create_profile.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1385583727006" ignored="false" />
     <file path="/add_address_details.html.erb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1385911663554" ignored="false" />
     <file path="/add_contact_details.html.erb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1385910073603" ignored="false" />
@@ -80,15 +149,20 @@
     <file path="/reservations_controller_test.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1386271336475" ignored="false" />
     <file path="/input_validations.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1386274240434" ignored="false" />
     <file path="/reservations_checks.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1386273503700" ignored="false" />
-    <file path="/services_controller.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1386714948203" ignored="false" />
-    <file path="/services_controller_test.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1386715174964" ignored="false" />
+    <file path="/services_controller.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1387982954481" ignored="false" />
+    <file path="/services_controller_test.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1387896041587" ignored="false" />
     <file path="/api_input_validations.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1386279972843" ignored="false" />
     <file path="/reservations_helper.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1386280010793" ignored="false" />
     <file path="/services_helper.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1386280035100" ignored="false" />
-    <file path="/Rakefile" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1386280444717" ignored="false" />
+    <file path="/Rakefile" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1387982248386" ignored="false" />
     <file path="/service_type.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1387799032658" ignored="false" />
     <file path="/reservation.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1387799873812" ignored="false" />
     <file path="/price_rating.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1387800052286" ignored="false" />
+    <file path="/api_controller.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1387802842101" ignored="false" />
+    <file path="/v1:services_controller_controller_spec.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1387896490605" ignored="false" />
+    <file path="/services_controller_spec.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1387983566502" ignored="false" />
+    <file path="/service_factory.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1387897333106" ignored="false" />
+    <file path="/factories.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1387982635163" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +177,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -139,7 +214,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -148,145 +222,159 @@
     <favorites_list name="stamp" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="service.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/stamp/service.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="70" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20131103141753_create_stamp_services.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20131103141753_create_stamp_services.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20131103141804_create_stamp_reservations.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20131103141804_create_stamp_reservations.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20131103141810_create_stamp_pre_reservations.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20131103141810_create_stamp_pre_reservations.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="20" selection-start="273" selection-end="273" vertical-scroll-proportion="0.27591974">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20131103141659_create_stamp_service_types.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20131103141659_create_stamp_service_types.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20131103141711_create_stamp_price_ratings.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20131103141711_create_stamp_price_ratings.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RailsDependency/#stamp" pinned="false" current="false" current-in-tab="false">
-        <entry file="uml://RailsDependency/#stamp">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>RailsDependency</ID>
-              <OriginalElement>#stamp</OriginalElement>
-              <nodes>
-                <node x="175.76161919040487" y="297.428035982009">Stamp::PreReservation</node>
-                <node x="-97.0779610194902" y="511.1566716641679">Stamp::TimeSlot</node>
-                <node x="514.7991004497751" y="14.647676161919037">Stamp::ServiceType</node>
-                <node x="536.1971514242879" y="191.70539730134942">Stamp::PriceRating</node>
-                <node x="-270.41979010494765" y="282.87781109445274">Stamp::Reservation</node>
-                <node x="-31.247376311844107" y="-11.094452773613174">Stamp::Service</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="Stamp::Service" target="Stamp::Reservation">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Stamp::Service" target="Stamp::PriceRating">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Stamp::ServiceType" target="Stamp::Service">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Stamp::Service" target="Stamp::PreReservation">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Stamp::Reservation" target="Stamp::TimeSlot">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Stamp::PreReservation" target="Stamp::TimeSlot">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="0.8673602080624188" x="-11.298350824587715" y="266.7016491754123" />
-              <SelectedNodes />
-              <Categories>
-                <Category>Association fields</Category>
-                <Category>Migration fields</Category>
-              </Categories>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reservation.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/stamp/reservation.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="62" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20131103141615_create_stamp_time_slots.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20131103141615_create_stamp_time_slots.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="price_rating.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/stamp/price_rating.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="62" selection-start="116" selection-end="116" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.43472022">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="RailsDependency/#stamp" pinned="false" current="false" current-in-tab="true">
+            <entry file="uml://RailsDependency/#stamp">
+              <provider selected="true" editor-type-id="UmlEditorProvider">
+                <state>
+                  <ID>RailsDependency</ID>
+                  <OriginalElement>#stamp</OriginalElement>
+                  <nodes>
+                    <node x="859.0" y="203.0">Stamp::PreReservation</node>
+                    <node x="1231.0" y="103.33333333333334">Stamp::TimeSlot</node>
+                    <node x="0.0" y="247.0">Stamp::ServiceType</node>
+                    <node x="869.0" y="406.0">Stamp::PriceRating</node>
+                    <node x="859.0" y="0.0">Stamp::Reservation</node>
+                    <node x="289.0" y="148.0">Stamp::Service</node>
+                  </nodes>
+                  <notes />
+                  <edges>
+                    <edge source="Stamp::Service" target="Stamp::PriceRating">
+                      <point x="0.0" y="0.0" />
+                      <point x="0.0" y="0.0" />
+                    </edge>
+                    <edge source="Stamp::Service" target="Stamp::Reservation">
+                      <point x="0.0" y="0.0" />
+                      <point x="0.0" y="0.0" />
+                    </edge>
+                    <edge source="Stamp::ServiceType" target="Stamp::Service">
+                      <point x="0.0" y="0.0" />
+                      <point x="0.0" y="0.0" />
+                    </edge>
+                    <edge source="Stamp::Service" target="Stamp::PreReservation">
+                      <point x="0.0" y="0.0" />
+                      <point x="0.0" y="0.0" />
+                    </edge>
+                    <edge source="Stamp::Reservation" target="Stamp::TimeSlot">
+                      <point x="0.0" y="0.0" />
+                      <point x="0.0" y="0.0" />
+                    </edge>
+                    <edge source="Stamp::PreReservation" target="Stamp::TimeSlot">
+                      <point x="0.0" y="0.0" />
+                      <point x="0.0" y="0.0" />
+                    </edge>
+                  </edges>
+                  <settings layout="Hierarchic Group" zoom="0.5875912408759124" x="1350.8136645962732" y="431.07453416149065" />
+                  <SelectedNodes>
+                    <node>Stamp::Service</node>
+                  </SelectedNodes>
+                  <Categories>
+                    <Category>Association fields</Category>
+                    <Category>Migration fields</Category>
+                  </Categories>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="20131103141659_create_stamp_service_types.rb" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/db/migrate/20131103141659_create_stamp_service_types.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="services_controller.rb" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/controllers/stamp/api/v1/services_controller.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="27" column="0" selection-start="1204" selection-end="1204" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="transactions.rb" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@global/gems/activerecord-4.0.1/lib/active_record/transactions.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="268" column="0" selection-start="11791" selection-end="11791" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="alias_tracker.rb" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@global/gems/activerecord-4.0.1/lib/active_record/associations/alias_tracker.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="7" column="0" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="spec_helper.rb" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="16" column="29" selection-start="542" selection-end="542" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="factories.rb" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/spec/factories.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="2" column="50" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="service.rb" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/models/stamp/service.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="25" column="22" selection-start="1064" selection-end="1064" vertical-scroll-proportion="0.49277267">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="20131103141753_create_stamp_services.rb" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/db/migrate/20131103141753_create_stamp_services.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="8" column="29" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="validations.rb" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@global/gems/activerecord-4.0.1/lib/active_record/validations.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="50" column="0" selection-start="1945" selection-end="1945" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
+  </component>
+  <component name="GeneratorOptions">
+    <option name="VCS_SHOW_CONFIRMATION" value="true" />
+    <option name="ENVIRONMENT" value="development" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -299,21 +387,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/helpers/stamp/api/v1/api_input_validations.rb" />
-        <option value="$PROJECT_DIR$/app/helpers/stamp/api/v1/reservations_helper.rb" />
-        <option value="$PROJECT_DIR$/app/helpers/stamp/api/v1/services_helper.rb" />
-        <option value="$PROJECT_DIR$/Rakefile" />
-        <option value="$PROJECT_DIR$/db/migrate/20131103141615_create_stamp_rate_types.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20131103141659_create_stamp_service_types.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20131103141753_create_stamp_services.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/stamp/api/v1/services_controller.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/stamp/api/v1/reservations_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/stamp/api_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/stamp/concerns/service.rb" />
+        <option value="$PROJECT_DIR$/test/dummy/config/routes.rb" />
         <option value="$PROJECT_DIR$/test/controllers/stamp/api/v1/services_controller_test.rb" />
-        <option value="$PROJECT_DIR$/app/models/stamp/service_type.rb" />
-        <option value="$PROJECT_DIR$/app/models/stamp/time_slot.rb" />
-        <option value="$PROJECT_DIR$/app/models/stamp/pre_reservation.rb" />
-        <option value="$PROJECT_DIR$/app/models/stamp/reservation.rb" />
-        <option value="$PROJECT_DIR$/app/models/stamp/price_rating.rb" />
+        <option value="$PROJECT_DIR$/spec/controllers/stamp/stamp/api/v1:services_controller_controller_spec.rb" />
+        <option value="$PROJECT_DIR$/stamp.gemspec" />
+        <option value="$PROJECT_DIR$/lib/stamp/engine.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/stamp/concerns/service_factory.rb" />
+        <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
+        <option value="$PROJECT_DIR$/spec/factories.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/stamp/api/v1/services_controller.rb" />
+        <option value="$PROJECT_DIR$/spec/controllers/stamp/api/v1/services_controller_spec.rb" />
+        <option value="$PROJECT_DIR$/Rakefile" />
+        <option value="$PROJECT_DIR$/db/migrate/20131103141753_create_stamp_services.rb" />
         <option value="$PROJECT_DIR$/app/models/stamp/service.rb" />
       </list>
     </option>
@@ -326,9 +414,8 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
     <option name="width" value="1440" />
-    <option name="height" value="813" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -356,7 +443,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -385,7 +471,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
+              <option name="myItemId" value="spec" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -399,7 +485,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
+              <option name="myItemId" value="spec" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -407,10 +493,61 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="RailsProjectView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -420,14 +557,17 @@
     <property name="options.lastSelected" value="Template Data Languages" />
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects" />
+    <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
     <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -439,26 +579,29 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/spec" />
       <recent name="$PROJECT_DIR$/../hubblin/app/views/layouts" />
       <recent name="$PROJECT_DIR$/../hubblin/app/views/users/registrations" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/controllers/stamp" />
       <recent name="$PROJECT_DIR$/app/helpers/stamp/api/v1" />
       <recent name="$PROJECT_DIR$/test/helpers/stamp/api/v1" />
       <recent name="$PROJECT_DIR$/test/models/stamp/api/v1" />
       <recent name="$PROJECT_DIR$/test/controllers/stamp/api/v1" />
-      <recent name="$PROJECT_DIR$/app/controllers/stamp/api/v1" />
     </key>
   </component>
-  <component name="RunManager" selected="Rails.Development: stamp">
-    <configuration default="false" name="Rails console: hubblin" type="IrbRunConfigurationType" factoryName="IRB console" temporary="true">
-      <module name="hubblin" />
-      <IRB_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <IRB_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$/../hubblin" />
-      <IRB_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
-      <IRB_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
-      <IRB_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
-      <envs />
+  <component name="RunManager" selected="RSpec.Api::V1::ServicesController">
+    <configuration default="false" name="db:migrate" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+      <module name="stamp" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="development" />
+      </envs>
       <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
       <EXTENSION ID="JRubyRunConfigurationExtension" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
@@ -467,21 +610,24 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <IRB_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/../hubblin/bin/rails" />
-      <IRB_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="console" />
-      <IRB_RUN_CONFIG NAME="IS_RAILS_CONSOLE" VALUE="true" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:migrate" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="test_Availability_with_non_existing_service" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
-      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
+    <configuration default="false" name="Api::V1::ServicesController POST #create creates a service" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="stamp" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift) -Itest" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
       <envs>
         <env name="RAILS_ENV" value="test" />
         <env name="JRUBY_OPTS" value="-X+O" />
@@ -494,25 +640,31 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/test/controllers/stamp/api/v1/services_controller_test.rb" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_Availability_with_non_existing_service" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/controllers/stamp/api/v1/services_controller_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Api::V1::ServicesController POST #create creates a service" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <RunnerSettings RunnerId="RubyDebugRunner" />
       <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyDebugRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="test_Booked_slots_for_a_single_day" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
-      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
+    <configuration default="false" name="Api::V1::ServicesController" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="stamp" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift) -Itest" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
       <envs>
         <env name="RAILS_ENV" value="test" />
         <env name="JRUBY_OPTS" value="-X+O" />
@@ -525,13 +677,87 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/test/controllers/stamp/api/v1/services_controller_test.rb" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_Booked_slots_for_a_single_day" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/controllers/stamp/api/v1/services_controller_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Api::V1::ServicesController" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Api::V1::ServicesController POST #create Can't create a service as there is no service type" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="stamp" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/controllers/stamp/api/v1/services_controller_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Api::V1::ServicesController POST #create Can't create a service as there is no service type" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Api::V1::ServicesController POST #create Can't create a service as there is no owner" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="stamp" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/controllers/stamp/api/v1/services_controller_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Api::V1::ServicesController POST #create Can't create a service as there is no owner" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
@@ -945,24 +1171,26 @@
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
       <method />
     </configuration>
-    <list size="9">
+    <list size="11">
       <item index="0" class="java.lang.String" itemvalue="Rails.Production: hubblin" />
       <item index="1" class="java.lang.String" itemvalue="Rails.Development: hubblin" />
-      <item index="2" class="java.lang.String" itemvalue="IRB console.Rails console: hubblin" />
-      <item index="3" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_Availability_with_non_existing_service" />
-      <item index="4" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_Booked_slots_for_a_single_day" />
-      <item index="5" class="java.lang.String" itemvalue="Rake.test" />
-      <item index="6" class="java.lang.String" itemvalue="Rake.spec" />
-      <item index="7" class="java.lang.String" itemvalue="Rails.Production: stamp" />
-      <item index="8" class="java.lang.String" itemvalue="Rails.Development: stamp" />
+      <item index="2" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="3" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="4" class="java.lang.String" itemvalue="Rails.Production: stamp" />
+      <item index="5" class="java.lang.String" itemvalue="Rails.Development: stamp" />
+      <item index="6" class="java.lang.String" itemvalue="Rake.db:migrate" />
+      <item index="7" class="java.lang.String" itemvalue="RSpec.Api::V1::ServicesController POST #create creates a service" />
+      <item index="8" class="java.lang.String" itemvalue="RSpec.Api::V1::ServicesController" />
+      <item index="9" class="java.lang.String" itemvalue="RSpec.Api::V1::ServicesController POST #create Can't create a service as there is no service type" />
+      <item index="10" class="java.lang.String" itemvalue="RSpec.Api::V1::ServicesController POST #create Can't create a service as there is no owner" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_Booked_slots_for_a_single_day" />
-        <item index="1" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_Availability_with_non_existing_service" />
-        <item index="2" class="java.lang.String" itemvalue="IRB console.Rails console: hubblin" />
-        <item index="3" class="java.lang.String" itemvalue="IRB console.Rails console: hubblin" />
-        <item index="4" class="java.lang.String" itemvalue="IRB console.Rails console: hubblin" />
+        <item index="0" class="java.lang.String" itemvalue="RSpec.Api::V1::ServicesController" />
+        <item index="1" class="java.lang.String" itemvalue="RSpec.Api::V1::ServicesController POST #create Can't create a service as there is no owner" />
+        <item index="2" class="java.lang.String" itemvalue="RSpec.Api::V1::ServicesController POST #create Can't create a service as there is no service type" />
+        <item index="3" class="java.lang.String" itemvalue="RSpec.Api::V1::ServicesController POST #create creates a service" />
+        <item index="4" class="java.lang.String" itemvalue="Rake.db:migrate" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -985,21 +1213,26 @@
       <created>1386715127117</created>
       <updated>1386715127117</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fixed all the entity relations">
+      <created>1387800159483</created>
+      <updated>1387800159483</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="813" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3254364" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3982684" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39775562" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1011,12 +1244,11 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30703014" sideWeight="0.6084788" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3915212" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30703014" sideWeight="0.6097257" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39027432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32587063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756132" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1064,7 +1296,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated database model to include more fields in the services entity.&#10;Removed rate_type from database model.&#10;Added booked_slots route." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed all the entity relations" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1080,6 +1312,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Adding reservations controller" />
     <MESSAGE value="Updated database model to include more fields in the services entity.&#10;Removed rate_type from database model.&#10;Added booked_slots route." />
+    <MESSAGE value="Fixed all the entity relations" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1099,8 +1332,18 @@
           <line>89</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/controllers/stamp/api/v1/services_controller.rb</url>
+          <line>27</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/models/stamp/service.rb</url>
+          <line>31</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="9" />
+      <option name="time" value="16" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1108,51 +1351,100 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/controllers/stamp/api/v1/services_controller_test.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/stamp/concerns/services_support.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="21" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0">
+        <state line="6" column="40" selection-start="80" selection-end="80" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/stamp/service_type.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/stamp/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="65" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
+        <state line="1" column="8" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/stamp/time_slot.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="77" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/stamp/pre_reservation.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="4" selection-start="219" selection-end="277" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/models/stamp/api/v1/price_rating_test.rb">
+    <entry file="file://$PROJECT_DIR$/.rspec">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/stamp/price_rating.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20131103141804_create_stamp_reservations.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="62" selection-start="116" selection-end="116" vertical-scroll-proportion="0.0">
+        <state line="3" column="29" selection-start="118" selection-end="141" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/stamp/service.rb">
+    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="70" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0">
+        <state line="16" column="29" selection-start="542" selection-end="542" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/factories.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="50" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@global/gems/activerecord-4.0.1/lib/active_record/transactions.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="268" column="0" selection-start="11791" selection-end="11791" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@global/gems/activerecord-4.0.1/lib/active_record/associations/alias_tracker.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@global/gems/activerecord-4.0.1/lib/active_record/validations.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="0" selection-start="1945" selection-end="1945" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/stamp/api/v1/services_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="1204" selection-end="1204" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/controllers/stamp/api/v1/services_controller_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="27" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0650289">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rakefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20131103141659_create_stamp_service_types.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20131103141753_create_stamp_services.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="29" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1163,20 +1455,20 @@
           <ID>RailsDependency</ID>
           <OriginalElement>#stamp</OriginalElement>
           <nodes>
-            <node x="175.76161919040487" y="297.428035982009">Stamp::PreReservation</node>
-            <node x="-97.0779610194902" y="511.1566716641679">Stamp::TimeSlot</node>
-            <node x="514.7991004497751" y="14.647676161919037">Stamp::ServiceType</node>
-            <node x="536.1971514242879" y="191.70539730134942">Stamp::PriceRating</node>
-            <node x="-270.41979010494765" y="282.87781109445274">Stamp::Reservation</node>
-            <node x="-31.247376311844107" y="-11.094452773613174">Stamp::Service</node>
+            <node x="859.0" y="203.0">Stamp::PreReservation</node>
+            <node x="1231.0" y="103.33333333333334">Stamp::TimeSlot</node>
+            <node x="0.0" y="247.0">Stamp::ServiceType</node>
+            <node x="869.0" y="406.0">Stamp::PriceRating</node>
+            <node x="859.0" y="0.0">Stamp::Reservation</node>
+            <node x="289.0" y="148.0">Stamp::Service</node>
           </nodes>
           <notes />
           <edges>
-            <edge source="Stamp::Service" target="Stamp::Reservation">
+            <edge source="Stamp::Service" target="Stamp::PriceRating">
               <point x="0.0" y="0.0" />
               <point x="0.0" y="0.0" />
             </edge>
-            <edge source="Stamp::Service" target="Stamp::PriceRating">
+            <edge source="Stamp::Service" target="Stamp::Reservation">
               <point x="0.0" y="0.0" />
               <point x="0.0" y="0.0" />
             </edge>
@@ -1197,8 +1489,10 @@
               <point x="0.0" y="0.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.8673602080624188" x="-11.298350824587715" y="266.7016491754123" />
-          <SelectedNodes />
+          <settings layout="Hierarchic Group" zoom="0.5875912408759124" x="1350.8136645962732" y="431.07453416149065" />
+          <SelectedNodes>
+            <node>Stamp::Service</node>
+          </SelectedNodes>
           <Categories>
             <Category>Association fields</Category>
             <Category>Migration fields</Category>
@@ -1206,51 +1500,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/stamp/reservation.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/stamp/service.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="62" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20131103141615_create_stamp_time_slots.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20131103141659_create_stamp_service_types.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20131103141711_create_stamp_price_ratings.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20131103141753_create_stamp_services.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20131103141804_create_stamp_reservations.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20131103141810_create_stamp_pre_reservations.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="20" selection-start="273" selection-end="273" vertical-scroll-proportion="0.27591974">
+        <state line="25" column="22" selection-start="1064" selection-end="1064" vertical-scroll-proportion="0.49277267">
           <folding />
         </state>
       </provider>

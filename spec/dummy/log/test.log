@@ -1,0 +1,954 @@
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Availability_with_non_existing_service
+-----------------------------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Availability_with_non_existing_service
+-----------------------------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Availability_with_non_existing_service
+-----------------------------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Availability_with_non_existing_service
+-----------------------------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Availability_with_non_existing_service
+-----------------------------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Availability_with_non_existing_service
+-----------------------------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Availability_with_non_existing_service
+-----------------------------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Availability_with_non_existing_service
+-----------------------------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Availability_with_non_existing_service
+-----------------------------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Availability_with_non_existing_service
+-----------------------------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Availability_with_non_existing_service
+-----------------------------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Availability_with_non_existing_service
+-----------------------------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Availability_with_non_existing_service
+-----------------------------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Availability_with_non_existing_service
+-----------------------------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Availability_with_non_existing_service
+-----------------------------------------------------------------------------------
+Processing by Stamp::Api::V1::ServicesController#availability as HTML
+  Parameters: {"service_id"=>"2"}
+Completed 500 Internal Server Error in 5ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.8ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateStampRateTypes (20131103141615)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "stamp_rate_types" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" varchar(255), "period_duration" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "stamp_time_slots" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "reservation_id" integer, "service_id" integer, "from" datetime, "unit" integer, "rate_type_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20131103141615"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateStampServiceTypes (20131103141659)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "stamp_service_types" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "rate_type_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20131103141659"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateStampPriceRatings (20131103141711)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "stamp_price_ratings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "service_id" integer, "from" datetime, "to" datetime, "value" decimal, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20131103141711"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateStampServices (20131103141753)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "stamp_services" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "service_type_id" integer, "external_id" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20131103141753"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateStampReservations (20131103141804)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "stamp_reservations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "customer_id" integer, "time_slot_id" integer, "service_id" integer, "total_price" decimal, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20131103141804"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateStampPreReservations (20131103141810)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "stamp_pre_reservations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "customer_id" integer, "time_slot_id" integer, "service_id" integer, "total_price" decimal, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20131103141810"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Availability_with_non_existing_service
+-----------------------------------------------------------------------------------
+Processing by Stamp::Api::V1::ServicesController#availability as HTML
+  Parameters: {"service_id"=>"2"}
+  [1m[35mStamp::Service Load (0.2ms)[0m  SELECT "stamp_services".* FROM "stamp_services" WHERE "stamp_services"."id" = ? LIMIT 1  [["id", "2"]]
+Completed 404 Not Found in 5ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Availability_with_non_existing_service
+-----------------------------------------------------------------------------------
+Processing by Stamp::Api::V1::ServicesController#availability as HTML
+  Parameters: {"service_id"=>"2"}
+  [1m[35mStamp::Service Load (0.2ms)[0m  SELECT "stamp_services".* FROM "stamp_services" WHERE "stamp_services"."id" = 2 LIMIT 1
+Completed 500 Internal Server Error in 9ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Availability_with_non_existing_service
+-----------------------------------------------------------------------------------
+Processing by Stamp::Api::V1::ServicesController#availability as HTML
+  Parameters: {"service_id"=>"2"}
+  [1m[35mStamp::Service Load (0.1ms)[0m  SELECT "stamp_services".* FROM "stamp_services" WHERE "stamp_services"."id" = 2 LIMIT 1
+Completed 500 Internal Server Error in 7ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Availability_with_non_existing_service
+-----------------------------------------------------------------------------------
+Processing by Stamp::Api::V1::ServicesController#availability as HTML
+  Parameters: {"service_id"=>"3"}
+  [1m[35mStamp::Service Load (0.1ms)[0m  SELECT "stamp_services".* FROM "stamp_services" WHERE "stamp_services"."id" = 3 LIMIT 1
+Completed 500 Internal Server Error in 6ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Availability_with_non_existing_service
+-----------------------------------------------------------------------------------
+Processing by Stamp::Api::V1::ServicesController#availability as HTML
+  Parameters: {"service_id"=>"3"}
+  [1m[35mStamp::Service Load (0.2ms)[0m  SELECT "stamp_services".* FROM "stamp_services" WHERE "stamp_services"."id" = 3 LIMIT 1
+Completed 400 Bad Request in 6ms (Views: 0.1ms | ActiveRecord: 1.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Booked_slots_for_a_single_day
+--------------------------------------------------------------------------
+Processing by Stamp::Api::V1::ServicesController#booked_slots as HTML
+  Parameters: {"service_id"=>"2"}
+Completed 500 Internal Server Error in 6ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.2ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateStampTimeSlots (20131103141615)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "stamp_time_slots" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "reservation_id" integer, "service_id" integer, "from" datetime, "units" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20131103141615"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Migrating to CreateStampServiceTypes (20131103141659)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "stamp_service_types" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20131103141659"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Migrating to CreateStampPriceRatings (20131103141711)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "stamp_price_ratings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "service_id" integer, "from" datetime, "to" datetime, "value" decimal, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20131103141711"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Migrating to CreateStampServices (20131103141753)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "stamp_services" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "opening_hours" integer, "closing_hours" integer, "external_id" varchar(255), "period_size" integer, "service_type_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "stamp_service_types" ADD "service_type_id" integer
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "index_stamp_service_types_on_service_type_id" ON "stamp_service_types" ("service_type_id")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20131103141753"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Migrating to CreateStampReservations (20131103141804)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "stamp_reservations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "customer_id" integer, "time_slot_id" integer, "service_id" integer, "total_price" decimal, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20131103141804"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Migrating to CreateStampPreReservations (20131103141810)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "stamp_pre_reservations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "customer_id" integer, "time_slot_id" integer, "service_id" integer, "total_price" decimal, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20131103141810"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Booked_slots_for_a_single_day
+--------------------------------------------------------------------------
+Processing by Stamp::Api::V1::ServicesController#booked_slots as HTML
+  Parameters: {"service_id"=>"2"}
+  [1m[35mStamp::Service Load (0.2ms)[0m  SELECT "stamp_services".* FROM "stamp_services" WHERE "stamp_services"."id" = 2 LIMIT 1
+Completed 400 Bad Request in 10ms (Views: 0.1ms | ActiveRecord: 1.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Create_a_Service
+-------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Create_a_Service
+-------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Create_a_Service
+-------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Create_a_Service
+-------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Create_a_Service
+-------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Create_a_Service
+-------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Create_a_Service
+-------------------------------------------------------------
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Create_a_Service
+-------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Create_a_Service
+-------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Availability_with_non_existing_service
+-----------------------------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Availability_with_non_existing_service
+-----------------------------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Availability_with_non_existing_service
+-----------------------------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Availability_with_non_existing_service
+-----------------------------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Booked_slots_for_a_single_day
+--------------------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Booked_slots_for_a_single_day
+--------------------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Booked_slots_for_a_single_day
+--------------------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Booked_slots_for_a_single_day
+--------------------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Booked_slots_for_a_single_day
+--------------------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Booked_slots_for_a_single_day
+--------------------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Create_a_Service
+-------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Booked_slots_for_a_single_day
+--------------------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------
+Stamp::Api::V1::ServicesControllerTest: test_Create_a_Service
+-------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+Processing by Stamp::Api::V1::ServicesController#create as HTML
+  Parameters: {"service"=>{"name"=>"A service"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (3.4ms)[0m  [1mINSERT INTO "stamp_services" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Tue, 24 Dec 2013 15:03:31 UTC +00:00], ["name", "A service"], ["updated_at", Tue, 24 Dec 2013 15:03:31 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 200 OK in 28ms (Views: 0.4ms | ActiveRecord: 5.1ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+Processing by Stamp::Api::V1::ServicesController#create as HTML
+  Parameters: {"service"=>{"name"=>"A service"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 200 OK in 30ms (Views: 0.4ms | ActiveRecord: 1.5ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+Processing by Stamp::Api::V1::ServicesController#create as HTML
+  Parameters: {"service"=>{"name"=>"A service"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 200 OK in 27ms (Views: 0.4ms | ActiveRecord: 1.2ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (1.2ms)[0m  [1mbegin transaction[0m
+Processing by Stamp::Api::V1::ServicesController#create as HTML
+  Parameters: {"service"=>{"name"=>"A service"}}
+  [1m[35m (0.6ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 200 OK in 234ms (Views: 2.7ms | ActiveRecord: 4.6ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.6ms)[0m  SELECT COUNT(*) FROM "stamp_services"
+Processing by Stamp::Api::V1::ServicesController#create as HTML
+  Parameters: {"service"=>{"name"=>"A service"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 19ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "stamp_services"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "stamp_services"
+Processing by Stamp::Api::V1::ServicesController#create as HTML
+  Parameters: {"service"=>{"name"=>"A service"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 19ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "stamp_services"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "stamp_services"
+Processing by Stamp::Api::V1::ServicesController#create as HTML
+  Parameters: {"service"=>{"name"=>"A service"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 20ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "stamp_services"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "stamp_services"
+Processing by Stamp::Api::V1::ServicesController#create as HTML
+  Parameters: {"service"=>{"name"=>"A service"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 18ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "stamp_services"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "stamp_services"
+Processing by Stamp::Api::V1::ServicesController#create as HTML
+  Parameters: {"service"=>{"name"=>"A service"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (1.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 53286ms (Views: 0.9ms | ActiveRecord: 1.7ms)
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "stamp_services"
+Processing by Stamp::Api::V1::ServicesController#create as HTML
+  Parameters: {"service"=>{"name"=>"A service"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 17ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "stamp_services"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "stamp_services"
+Processing by Stamp::Api::V1::ServicesController#create as HTML
+  Parameters: {"service"=>{"name"=>"A service"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 422 Unprocessable Entity in 19ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "stamp_services"
+Processing by Stamp::Api::V1::ServicesController#create as HTML
+  Parameters: {"service"=>{"name"=>"Bakery 1", "external_id"=>"external", "opening_hours"=>"10:00", "closing_hours"=>"24:00", "period_size"=>"1.0", "service_type_id"=>"1"}}
+Unpermitted parameters: service_type_id
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStamp::ServiceType Exists (0.8ms)[0m  SELECT 1 AS one FROM "stamp_service_types" WHERE "stamp_service_types"."id" IS NULL LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 14937ms (Views: 1.1ms | ActiveRecord: 3.0ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "stamp_pre_reservations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "customer_id" integer, "time_slot_id" integer, "service_id" integer, "total_price" decimal, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "stamp_price_ratings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "service_id" integer, "from" datetime, "to" datetime, "value" decimal, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "stamp_reservations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "customer_id" integer, "time_slot_id" integer, "service_id" integer, "total_price" decimal, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "stamp_service_types" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime, "service_type_id" integer) 
+  [1m[36m (0.7ms)[0m  [1mCREATE INDEX "index_stamp_service_types_on_service_type_id" ON "stamp_service_types" ("service_type_id")[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "stamp_services" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "opening_hours" integer, "closing_hours" integer, "external_id" varchar(255), "period_size" integer, "service_type_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "stamp_time_slots" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "reservation_id" integer, "service_id" integer, "from" datetime, "units" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131103141810')[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20131103141615')
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131103141659')[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20131103141711')
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131103141753')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20131103141804')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateStampTimeSlots (20131103141615)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "stamp_time_slots" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "reservation_id" integer, "service_id" integer, "from" datetime, "units" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20131103141615"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Migrating to CreateStampServiceTypes (20131103141659)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "stamp_service_types" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20131103141659"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Migrating to CreateStampPriceRatings (20131103141711)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "stamp_price_ratings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "service_id" integer, "from" datetime, "to" datetime, "value" decimal, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20131103141711"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Migrating to CreateStampServices (20131103141753)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "stamp_services" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "owner_id" integer, "name" varchar(255), "opening_hours" integer, "closing_hours" integer, "external_id" varchar(255), "period_size" integer, "service_type_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "stamp_service_types" ADD "service_type_id" integer
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "index_stamp_service_types_on_service_type_id" ON "stamp_service_types" ("service_type_id")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20131103141753"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Migrating to CreateStampReservations (20131103141804)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "stamp_reservations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "customer_id" integer, "time_slot_id" integer, "service_id" integer, "total_price" decimal, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20131103141804"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Migrating to CreateStampPreReservations (20131103141810)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "stamp_pre_reservations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "customer_id" integer, "time_slot_id" integer, "service_id" integer, "total_price" decimal, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20131103141810"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.7ms)[0m  INSERT INTO "stamp_service_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 25 Dec 2013 14:45:48 UTC +00:00], ["name", "Restaurant"], ["updated_at", Wed, 25 Dec 2013 14:45:48 UTC +00:00]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "stamp_service_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 25 Dec 2013 14:45:48 UTC +00:00], ["name", "Bakery"], ["updated_at", Wed, 25 Dec 2013 14:45:48 UTC +00:00]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "stamp_services"
+Processing by Stamp::Api::V1::ServicesController#create as HTML
+  Parameters: {"service"=>{"name"=>"Bakery 1", "external_id"=>"external", "opening_hours"=>"10:00", "closing_hours"=>"24:00", "period_size"=>"1.0", "service_type_id"=>"1", "owner_id"=>"1"}}
+Unpermitted parameters: service_type_id
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStamp::ServiceType Exists (0.1ms)[0m  SELECT 1 AS one FROM "stamp_service_types" WHERE "stamp_service_types"."id" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 46ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.3ms)[0m  INSERT INTO "stamp_service_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 25 Dec 2013 14:46:25 UTC +00:00], ["name", "Restaurant"], ["updated_at", Wed, 25 Dec 2013 14:46:25 UTC +00:00]]
+  [1m[36m (3.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "stamp_service_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 25 Dec 2013 14:46:25 UTC +00:00], ["name", "Bakery"], ["updated_at", Wed, 25 Dec 2013 14:46:25 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "stamp_services"
+Processing by Stamp::Api::V1::ServicesController#create as HTML
+  Parameters: {"service"=>{"name"=>"Bakery 1", "external_id"=>"external", "opening_hours"=>"10:00", "closing_hours"=>"24:00", "period_size"=>"1.0", "service_type_id"=>"1", "owner_id"=>"1"}}
+Unpermitted parameters: service_type_id
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStamp::ServiceType Exists (0.4ms)[0m  SELECT 1 AS one FROM "stamp_service_types" WHERE "stamp_service_types"."id" IS NULL LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.4ms)[0m  INSERT INTO "stamp_service_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 25 Dec 2013 14:48:38 UTC +00:00], ["name", "Restaurant"], ["updated_at", Wed, 25 Dec 2013 14:48:38 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 135238ms (Views: 1.5ms | ActiveRecord: 1.2ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (2565.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.6ms)[0m  begin transaction
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "stamp_service_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 25 Dec 2013 14:48:40 UTC +00:00], ["name", "Bakery"], ["updated_at", Wed, 25 Dec 2013 14:48:40 UTC +00:00]]
+  [1m[35m (640.0ms)[0m  commit transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "stamp_services"
+Processing by Stamp::Api::V1::ServicesController#create as HTML
+  Parameters: {"service"=>{"name"=>"Bakery 1", "external_id"=>"external", "opening_hours"=>"10:00", "closing_hours"=>"24:00", "period_size"=>"1.0", "service_type_id"=>"1", "owner_id"=>"1"}}
+Unpermitted parameters: service_type_id
+Unpermitted parameters: service_type_id
+  [1m[36m (0.7ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.7ms)[0m  INSERT INTO "stamp_service_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 25 Dec 2013 14:49:20 UTC +00:00], ["name", "Restaurant"], ["updated_at", Wed, 25 Dec 2013 14:49:20 UTC +00:00]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "stamp_service_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 25 Dec 2013 14:49:20 UTC +00:00], ["name", "Bakery"], ["updated_at", Wed, 25 Dec 2013 14:49:20 UTC +00:00]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "stamp_services"
+Processing by Stamp::Api::V1::ServicesController#create as HTML
+  Parameters: {"service"=>{"name"=>"Bakery 1", "external_id"=>"external", "opening_hours"=>"10:00", "closing_hours"=>"24:00", "period_size"=>"1.0", "service_type_id"=>"1", "owner_id"=>"1"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStamp::ServiceType Exists (0.1ms)[0m  SELECT 1 AS one FROM "stamp_service_types" WHERE "stamp_service_types"."id" = 1 LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "stamp_services" ("closing_hours", "created_at", "external_id", "name", "opening_hours", "owner_id", "period_size", "service_type_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["closing_hours", 24], ["created_at", Wed, 25 Dec 2013 14:49:20 UTC +00:00], ["external_id", "external"], ["name", "Bakery 1"], ["opening_hours", 10], ["owner_id", 1], ["period_size", 1], ["service_type_id", 1], ["updated_at", Wed, 25 Dec 2013 14:49:20 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 200 OK in 42ms (Views: 0.4ms | ActiveRecord: 0.7ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "stamp_services"[0m
+  [1m[35m (2.0ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.9ms)[0m  INSERT INTO "stamp_service_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 25 Dec 2013 14:50:10 UTC +00:00], ["name", "Restaurant"], ["updated_at", Wed, 25 Dec 2013 14:50:10 UTC +00:00]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "stamp_service_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 25 Dec 2013 14:50:10 UTC +00:00], ["name", "Bakery"], ["updated_at", Wed, 25 Dec 2013 14:50:10 UTC +00:00]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "stamp_services"
+Processing by Stamp::Api::V1::ServicesController#create as HTML
+  Parameters: {"service"=>{"name"=>"Bakery 1", "external_id"=>"external", "opening_hours"=>"10:00", "closing_hours"=>"24:00", "period_size"=>"1.0", "service_type_id"=>"1", "owner_id"=>"1"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStamp::ServiceType Exists (0.1ms)[0m  SELECT 1 AS one FROM "stamp_service_types" WHERE "stamp_service_types"."id" = 1 LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "stamp_services" ("closing_hours", "created_at", "external_id", "name", "opening_hours", "owner_id", "period_size", "service_type_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["closing_hours", 24], ["created_at", Wed, 25 Dec 2013 14:50:10 UTC +00:00], ["external_id", "external"], ["name", "Bakery 1"], ["opening_hours", 10], ["owner_id", 1], ["period_size", 1], ["service_type_id", 1], ["updated_at", Wed, 25 Dec 2013 14:50:10 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 200 OK in 44ms (Views: 0.5ms | ActiveRecord: 0.7ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "stamp_services"[0m
+  [1m[35m (2.1ms)[0m  rollback transaction
+  [1m[36mStamp::ServiceType Load (0.2ms)[0m  [1mSELECT "stamp_service_types".* FROM "stamp_service_types"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "stamp_service_types" WHERE "stamp_service_types"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "stamp_service_types" WHERE "stamp_service_types"."id" = ?  [["id", 2]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "stamp_service_types" WHERE "stamp_service_types"."id" = ?[0m  [["id", 3]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "stamp_service_types" WHERE "stamp_service_types"."id" = ?  [["id", 4]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "stamp_service_types" WHERE "stamp_service_types"."id" = ?[0m  [["id", 5]]
+  [1m[35m (0.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "stamp_service_types" WHERE "stamp_service_types"."id" = ?  [["id", 6]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "stamp_service_types" WHERE "stamp_service_types"."id" = ?[0m  [["id", 7]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "stamp_service_types" WHERE "stamp_service_types"."id" = ?  [["id", 8]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "stamp_service_types" WHERE "stamp_service_types"."id" = ?[0m  [["id", 9]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "stamp_service_types" WHERE "stamp_service_types"."id" = ?  [["id", 10]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.6ms)[0m  INSERT INTO "stamp_service_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 25 Dec 2013 14:51:44 UTC +00:00], ["name", "Restaurant"], ["updated_at", Wed, 25 Dec 2013 14:51:44 UTC +00:00]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "stamp_service_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 25 Dec 2013 14:51:44 UTC +00:00], ["name", "Bakery"], ["updated_at", Wed, 25 Dec 2013 14:51:44 UTC +00:00]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "stamp_services"
+Processing by Stamp::Api::V1::ServicesController#create as HTML
+  Parameters: {"service"=>{"name"=>"Bakery 1", "external_id"=>"external", "opening_hours"=>"10:00", "closing_hours"=>"24:00", "period_size"=>"1.0", "service_type_id"=>"1", "owner_id"=>"1"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStamp::ServiceType Exists (0.1ms)[0m  SELECT 1 AS one FROM "stamp_service_types" WHERE "stamp_service_types"."id" = 1 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 46ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mStamp::ServiceType Load (0.1ms)[0m  [1mSELECT "stamp_service_types".* FROM "stamp_service_types"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "stamp_service_types" WHERE "stamp_service_types"."id" = ?[0m  [["id", 11]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "stamp_service_types" WHERE "stamp_service_types"."id" = ?  [["id", 12]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.7ms)[0m  INSERT INTO "stamp_service_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 25 Dec 2013 14:51:50 UTC +00:00], ["name", "Restaurant"], ["updated_at", Wed, 25 Dec 2013 14:51:50 UTC +00:00]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "stamp_service_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 25 Dec 2013 14:51:50 UTC +00:00], ["name", "Bakery"], ["updated_at", Wed, 25 Dec 2013 14:51:50 UTC +00:00]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "stamp_services"
+Processing by Stamp::Api::V1::ServicesController#create as HTML
+  Parameters: {"service"=>{"name"=>"Bakery 1", "external_id"=>"external", "opening_hours"=>"10:00", "closing_hours"=>"24:00", "period_size"=>"1.0", "service_type_id"=>"1", "owner_id"=>"1"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStamp::ServiceType Exists (0.1ms)[0m  SELECT 1 AS one FROM "stamp_service_types" WHERE "stamp_service_types"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 46ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mStamp::ServiceType Load (0.2ms)[0m  [1mSELECT "stamp_service_types".* FROM "stamp_service_types"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "stamp_service_types" WHERE "stamp_service_types"."id" = ?[0m  [["id", 13]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "stamp_service_types" WHERE "stamp_service_types"."id" = ?  [["id", 14]]
+  [1m[36m (0.4ms)[0m  [1mcommit transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.5ms)[0m  INSERT INTO "stamp_service_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 25 Dec 2013 14:52:15 UTC +00:00], ["name", "Restaurant"], ["updated_at", Wed, 25 Dec 2013 14:52:15 UTC +00:00]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "stamp_service_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 25 Dec 2013 14:52:15 UTC +00:00], ["name", "Bakery"], ["updated_at", Wed, 25 Dec 2013 14:52:15 UTC +00:00]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "stamp_services"
+Processing by Stamp::Api::V1::ServicesController#create as HTML
+  Parameters: {"service"=>{"name"=>"Bakery 1", "external_id"=>"external", "opening_hours"=>"10:00", "closing_hours"=>"24:00", "period_size"=>"1.0", "service_type_id"=>"1", "owner_id"=>"1"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStamp::ServiceType Exists (0.1ms)[0m  SELECT 1 AS one FROM "stamp_service_types" WHERE "stamp_service_types"."id" = 1 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 43ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mStamp::ServiceType Load (0.2ms)[0m  [1mSELECT "stamp_service_types".* FROM "stamp_service_types"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "stamp_service_types" WHERE "stamp_service_types"."id" = ?[0m  [["id", 15]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "stamp_service_types" WHERE "stamp_service_types"."id" = ?  [["id", 16]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.6ms)[0m  INSERT INTO "stamp_service_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 25 Dec 2013 14:52:27 UTC +00:00], ["name", "Restaurant"], ["updated_at", Wed, 25 Dec 2013 14:52:27 UTC +00:00]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "stamp_service_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 25 Dec 2013 14:52:27 UTC +00:00], ["name", "Bakery"], ["updated_at", Wed, 25 Dec 2013 14:52:27 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "stamp_services"
+Processing by Stamp::Api::V1::ServicesController#create as HTML
+  Parameters: {"service"=>{"name"=>"Bakery 1", "external_id"=>"external", "opening_hours"=>"10:00", "closing_hours"=>"24:00", "period_size"=>"1.0", "service_type_id"=>"1", "owner_id"=>"1"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStamp::ServiceType Exists (0.1ms)[0m  SELECT 1 AS one FROM "stamp_service_types" WHERE "stamp_service_types"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 44ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mStamp::ServiceType Load (0.2ms)[0m  [1mSELECT "stamp_service_types".* FROM "stamp_service_types"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "stamp_service_types" WHERE "stamp_service_types"."id" = ?[0m  [["id", 17]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "stamp_service_types" WHERE "stamp_service_types"."id" = ?  [["id", 18]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO "stamp_service_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 25 Dec 2013 14:53:03 UTC +00:00], ["name", "Restaurant"], ["updated_at", Wed, 25 Dec 2013 14:53:03 UTC +00:00]]
+  [1m[36m (3.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "stamp_service_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 25 Dec 2013 14:53:03 UTC +00:00], ["name", "Bakery"], ["updated_at", Wed, 25 Dec 2013 14:53:03 UTC +00:00]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "stamp_services"
+Processing by Stamp::Api::V1::ServicesController#create as HTML
+  Parameters: {"service"=>{"name"=>"Bakery 1", "external_id"=>"external", "opening_hours"=>"10:00", "closing_hours"=>"24:00", "period_size"=>"1.0", "service_type_id"=>"1", "owner_id"=>"1"}}
+  [1m[36m (0.6ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStamp::ServiceType Exists (0.7ms)[0m  SELECT 1 AS one FROM "stamp_service_types" WHERE "stamp_service_types"."id" = 1 LIMIT 1
+  [1m[36mStamp::ServiceType Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "stamp_service_types" WHERE "stamp_service_types"."id" = 1 LIMIT 1[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.7ms)[0m  INSERT INTO "stamp_service_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 25 Dec 2013 14:54:35 UTC +00:00], ["name", "Restaurant"], ["updated_at", Wed, 25 Dec 2013 14:54:35 UTC +00:00]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "stamp_service_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 25 Dec 2013 14:54:35 UTC +00:00], ["name", "Bakery"], ["updated_at", Wed, 25 Dec 2013 14:54:35 UTC +00:00]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "stamp_services"
+Processing by Stamp::Api::V1::ServicesController#create as HTML
+  Parameters: {"service"=>{"name"=>"Bakery 1", "external_id"=>"external", "opening_hours"=>"10:00", "closing_hours"=>"24:00", "period_size"=>"1.0", "service_type_id"=>"1", "owner_id"=>"1"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStamp::ServiceType Exists (0.1ms)[0m  SELECT 1 AS one FROM "stamp_service_types" WHERE "stamp_service_types"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 45ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.9ms)[0m  INSERT INTO "stamp_service_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 25 Dec 2013 14:54:42 UTC +00:00], ["name", "Restaurant"], ["updated_at", Wed, 25 Dec 2013 14:54:42 UTC +00:00]]
+  [1m[36m (99.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "stamp_service_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 25 Dec 2013 14:54:43 UTC +00:00], ["name", "Bakery"], ["updated_at", Wed, 25 Dec 2013 14:54:43 UTC +00:00]]
+  [1m[35m (642.9ms)[0m  commit transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "stamp_services"
+Processing by Stamp::Api::V1::ServicesController#create as HTML
+  Parameters: {"service"=>{"name"=>"Bakery 1", "external_id"=>"external", "opening_hours"=>"10:00", "closing_hours"=>"24:00", "period_size"=>"1.0", "service_type_id"=>"1", "owner_id"=>"1"}}
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStamp::ServiceType Exists (0.5ms)[0m  SELECT 1 AS one FROM "stamp_service_types" WHERE "stamp_service_types"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "stamp_service_types"[0m
+  [1m[35mStamp::ServiceType Load (0.2ms)[0m  SELECT "stamp_service_types".* FROM "stamp_service_types" WHERE "stamp_service_types"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mStamp::ServiceType Load (0.1ms)[0m  [1mSELECT "stamp_service_types".* FROM "stamp_service_types" WHERE "stamp_service_types"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mStamp::ServiceType Load (0.2ms)[0m  SELECT "stamp_service_types".* FROM "stamp_service_types" ORDER BY "stamp_service_types"."id" ASC LIMIT 1
+  [1m[36mStamp::ServiceType Load (0.2ms)[0m  [1mSELECT "stamp_service_types".* FROM "stamp_service_types" ORDER BY "stamp_service_types"."id" ASC LIMIT 1[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.7ms)[0m  INSERT INTO "stamp_service_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 25 Dec 2013 14:57:16 UTC +00:00], ["name", "Restaurant"], ["updated_at", Wed, 25 Dec 2013 14:57:16 UTC +00:00]]
+  [1m[36m (4929.0ms)[0m  [1mcommit transaction[0m
+SQLite3::BusyException: database is locked: commit transaction
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36mStamp::ServiceType Load (0.2ms)[0m  [1mSELECT "stamp_service_types".* FROM "stamp_service_types"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mDELETE FROM "stamp_service_types" WHERE "stamp_service_types"."id" = ?[0m  [["id", 19]]
+  [1m[35m (4927.7ms)[0m  commit transaction
+SQLite3::BusyException: database is locked: commit transaction
+  [1m[36m (2.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.5ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 422 Unprocessable Entity in 169299ms (Views: 1.5ms | ActiveRecord: 2.1ms)
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.6ms)[0m  INSERT INTO "stamp_service_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 25 Dec 2013 14:57:37 UTC +00:00], ["name", "Restaurant"], ["updated_at", Wed, 25 Dec 2013 14:57:37 UTC +00:00]]
+  [1m[36m (99.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "stamp_service_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 25 Dec 2013 14:57:37 UTC +00:00], ["name", "Bakery"], ["updated_at", Wed, 25 Dec 2013 14:57:37 UTC +00:00]]
+  [1m[35m (651.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "stamp_services"
+Processing by Stamp::Api::V1::ServicesController#create as HTML
+  Parameters: {"service"=>{"name"=>"Bakery 1", "external_id"=>"external", "opening_hours"=>"10:00", "closing_hours"=>"24:00", "period_size"=>"1.0", "service_type_id"=>"26", "owner_id"=>"1"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStamp::ServiceType Exists (0.1ms)[0m  SELECT 1 AS one FROM "stamp_service_types" WHERE "stamp_service_types"."id" = 26 LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "stamp_services" ("closing_hours", "created_at", "external_id", "name", "opening_hours", "owner_id", "period_size", "service_type_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["closing_hours", 24], ["created_at", Wed, 25 Dec 2013 14:57:37 UTC +00:00], ["external_id", "external"], ["name", "Bakery 1"], ["opening_hours", 10], ["owner_id", 1], ["period_size", 1], ["service_type_id", 26], ["updated_at", Wed, 25 Dec 2013 14:57:37 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 200 OK in 42ms (Views: 0.5ms | ActiveRecord: 0.7ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "stamp_services"[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36mStamp::ServiceType Load (0.2ms)[0m  [1mSELECT "stamp_service_types".* FROM "stamp_service_types"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "stamp_service_types" WHERE "stamp_service_types"."id" = ?[0m  [["id", 19]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "stamp_service_types" WHERE "stamp_service_types"."id" = ?  [["id", 20]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "stamp_service_types" WHERE "stamp_service_types"."id" = ?[0m  [["id", 21]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "stamp_service_types" WHERE "stamp_service_types"."id" = ?  [["id", 22]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "stamp_service_types" WHERE "stamp_service_types"."id" = ?[0m  [["id", 23]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "stamp_service_types" WHERE "stamp_service_types"."id" = ?  [["id", 24]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "stamp_service_types" WHERE "stamp_service_types"."id" = ?[0m  [["id", 25]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "stamp_service_types" WHERE "stamp_service_types"."id" = ?  [["id", 26]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.7ms)[0m  INSERT INTO "stamp_service_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 25 Dec 2013 14:57:45 UTC +00:00], ["name", "Restaurant"], ["updated_at", Wed, 25 Dec 2013 14:57:45 UTC +00:00]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "stamp_service_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 25 Dec 2013 14:57:45 UTC +00:00], ["name", "Bakery"], ["updated_at", Wed, 25 Dec 2013 14:57:45 UTC +00:00]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "stamp_services"
+Processing by Stamp::Api::V1::ServicesController#create as HTML
+  Parameters: {"service"=>{"name"=>"Bakery 1", "external_id"=>"external", "opening_hours"=>"10:00", "closing_hours"=>"24:00", "period_size"=>"1.0", "service_type_id"=>"28", "owner_id"=>"1"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStamp::ServiceType Exists (0.1ms)[0m  SELECT 1 AS one FROM "stamp_service_types" WHERE "stamp_service_types"."id" = 28 LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "stamp_services" ("closing_hours", "created_at", "external_id", "name", "opening_hours", "owner_id", "period_size", "service_type_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["closing_hours", 24], ["created_at", Wed, 25 Dec 2013 14:57:46 UTC +00:00], ["external_id", "external"], ["name", "Bakery 1"], ["opening_hours", 10], ["owner_id", 1], ["period_size", 1], ["service_type_id", 28], ["updated_at", Wed, 25 Dec 2013 14:57:46 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 200 OK in 43ms (Views: 0.5ms | ActiveRecord: 0.7ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "stamp_services"[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "stamp_services"
+Processing by Stamp::Api::V1::ServicesController#create as HTML
+  Parameters: {"service"=>{"name"=>"Bakery 1", "external_id"=>"external", "opening_hours"=>"10:00", "closing_hours"=>"24:00", "period_size"=>"1.0", "service_type_id"=>"-1", "owner_id"=>"1"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStamp::ServiceType Exists (0.1ms)[0m  SELECT 1 AS one FROM "stamp_service_types" WHERE "stamp_service_types"."id" = -1 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 8ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "stamp_services"
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35mStamp::ServiceType Load (0.1ms)[0m  SELECT "stamp_service_types".* FROM "stamp_service_types"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "stamp_service_types" WHERE "stamp_service_types"."id" = ?  [["id", 27]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "stamp_service_types" WHERE "stamp_service_types"."id" = ?[0m  [["id", 28]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.7ms)[0m  INSERT INTO "stamp_service_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 25 Dec 2013 14:58:45 UTC +00:00], ["name", "Restaurant"], ["updated_at", Wed, 25 Dec 2013 14:58:45 UTC +00:00]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "stamp_service_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 25 Dec 2013 14:58:45 UTC +00:00], ["name", "Bakery"], ["updated_at", Wed, 25 Dec 2013 14:58:45 UTC +00:00]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "stamp_services"
+Processing by Stamp::Api::V1::ServicesController#create as HTML
+  Parameters: {"service"=>{"name"=>"Bakery 1", "external_id"=>"external", "opening_hours"=>"10:00", "closing_hours"=>"24:00", "period_size"=>"1.0", "service_type_id"=>"30", "owner_id"=>"1"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStamp::ServiceType Exists (0.1ms)[0m  SELECT 1 AS one FROM "stamp_service_types" WHERE "stamp_service_types"."id" = 30 LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "stamp_services" ("closing_hours", "created_at", "external_id", "name", "opening_hours", "owner_id", "period_size", "service_type_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["closing_hours", 24], ["created_at", Wed, 25 Dec 2013 14:58:45 UTC +00:00], ["external_id", "external"], ["name", "Bakery 1"], ["opening_hours", 10], ["owner_id", 1], ["period_size", 1], ["service_type_id", 30], ["updated_at", Wed, 25 Dec 2013 14:58:45 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 200 OK in 44ms (Views: 0.4ms | ActiveRecord: 0.7ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "stamp_services"[0m
+  [1m[35m (2.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "stamp_services"
+Processing by Stamp::Api::V1::ServicesController#create as HTML
+  Parameters: {"service"=>{"name"=>"Bakery 1", "external_id"=>"external", "opening_hours"=>"10:00", "closing_hours"=>"24:00", "period_size"=>"1.0", "service_type_id"=>"-1", "owner_id"=>"1"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStamp::ServiceType Exists (0.1ms)[0m  SELECT 1 AS one FROM "stamp_service_types" WHERE "stamp_service_types"."id" = -1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 9ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "stamp_services"
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "stamp_services"[0m
+Processing by Stamp::Api::V1::ServicesController#create as HTML
+  Parameters: {"service"=>{"name"=>"Bakery 1", "external_id"=>"external", "opening_hours"=>"10:00", "closing_hours"=>"24:00", "period_size"=>"1.0", "owner_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mStamp::ServiceType Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "stamp_service_types" WHERE "stamp_service_types"."id" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 422 Unprocessable Entity in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "stamp_services"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mStamp::ServiceType Load (0.1ms)[0m  [1mSELECT "stamp_service_types".* FROM "stamp_service_types"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "stamp_service_types" WHERE "stamp_service_types"."id" = ?[0m  [["id", 29]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "stamp_service_types" WHERE "stamp_service_types"."id" = ?  [["id", 30]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.8ms)[0m  INSERT INTO "stamp_service_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 25 Dec 2013 14:58:49 UTC +00:00], ["name", "Restaurant"], ["updated_at", Wed, 25 Dec 2013 14:58:49 UTC +00:00]]
+  [1m[36m (398.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "stamp_service_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 25 Dec 2013 14:58:49 UTC +00:00], ["name", "Bakery"], ["updated_at", Wed, 25 Dec 2013 14:58:49 UTC +00:00]]
+  [1m[35m (8.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "stamp_services"
+Processing by Stamp::Api::V1::ServicesController#create as HTML
+  Parameters: {"service"=>{"name"=>"Bakery 1", "external_id"=>"external", "opening_hours"=>"10:00", "closing_hours"=>"24:00", "period_size"=>"1.0", "owner_id"=>"1"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStamp::ServiceType Exists (0.1ms)[0m  SELECT 1 AS one FROM "stamp_service_types" WHERE "stamp_service_types"."id" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 53ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "stamp_services"
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35mStamp::ServiceType Load (0.1ms)[0m  SELECT "stamp_service_types".* FROM "stamp_service_types"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "stamp_service_types" WHERE "stamp_service_types"."id" = ?  [["id", 31]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "stamp_service_types" WHERE "stamp_service_types"."id" = ?[0m  [["id", 32]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.7ms)[0m  INSERT INTO "stamp_service_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 25 Dec 2013 14:59:36 UTC +00:00], ["name", "Restaurant"], ["updated_at", Wed, 25 Dec 2013 14:59:36 UTC +00:00]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "stamp_service_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 25 Dec 2013 14:59:36 UTC +00:00], ["name", "Bakery"], ["updated_at", Wed, 25 Dec 2013 14:59:36 UTC +00:00]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "stamp_services"
+Processing by Stamp::Api::V1::ServicesController#create as HTML
+  Parameters: {"service"=>{"name"=>"Bakery 1", "external_id"=>"external", "opening_hours"=>"10:00", "closing_hours"=>"24:00", "period_size"=>"1.0", "service_type"=>"33"}}
+Unpermitted parameters: service_type
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStamp::ServiceType Exists (0.1ms)[0m  SELECT 1 AS one FROM "stamp_service_types" WHERE "stamp_service_types"."id" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 46ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "stamp_services"
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35mStamp::ServiceType Load (0.1ms)[0m  SELECT "stamp_service_types".* FROM "stamp_service_types"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "stamp_service_types" WHERE "stamp_service_types"."id" = ?  [["id", 33]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "stamp_service_types" WHERE "stamp_service_types"."id" = ?[0m  [["id", 34]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.5ms)[0m  INSERT INTO "stamp_service_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 25 Dec 2013 14:59:44 UTC +00:00], ["name", "Restaurant"], ["updated_at", Wed, 25 Dec 2013 14:59:44 UTC +00:00]]
+  [1m[36m (699.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "stamp_service_types" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 25 Dec 2013 14:59:45 UTC +00:00], ["name", "Bakery"], ["updated_at", Wed, 25 Dec 2013 14:59:45 UTC +00:00]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "stamp_services"
+Processing by Stamp::Api::V1::ServicesController#create as HTML
+  Parameters: {"service"=>{"name"=>"Bakery 1", "external_id"=>"external", "opening_hours"=>"10:00", "closing_hours"=>"24:00", "period_size"=>"1.0", "service_type_id"=>"-1", "owner_id"=>"1"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStamp::ServiceType Exists (0.1ms)[0m  SELECT 1 AS one FROM "stamp_service_types" WHERE "stamp_service_types"."id" = -1 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 46ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "stamp_services"
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "stamp_services"[0m
+Processing by Stamp::Api::V1::ServicesController#create as HTML
+  Parameters: {"service"=>{"name"=>"Bakery 1", "external_id"=>"external", "opening_hours"=>"10:00", "closing_hours"=>"24:00", "period_size"=>"1.0", "service_type_id"=>"36", "owner_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mStamp::ServiceType Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "stamp_service_types" WHERE "stamp_service_types"."id" = 36 LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "stamp_services" ("closing_hours", "created_at", "external_id", "name", "opening_hours", "owner_id", "period_size", "service_type_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["closing_hours", 24], ["created_at", Wed, 25 Dec 2013 14:59:45 UTC +00:00], ["external_id", "external"], ["name", "Bakery 1"], ["opening_hours", 10], ["owner_id", 1], ["period_size", 1], ["service_type_id", 36], ["updated_at", Wed, 25 Dec 2013 14:59:45 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 6ms (Views: 0.8ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "stamp_services"
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "stamp_services"[0m
+Processing by Stamp::Api::V1::ServicesController#create as HTML
+  Parameters: {"service"=>{"name"=>"Bakery 1", "external_id"=>"external", "opening_hours"=>"10:00", "closing_hours"=>"24:00", "period_size"=>"1.0", "owner_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mStamp::ServiceType Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "stamp_service_types" WHERE "stamp_service_types"."id" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 422 Unprocessable Entity in 6ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "stamp_services"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "stamp_services"
+Processing by Stamp::Api::V1::ServicesController#create as HTML
+  Parameters: {"service"=>{"name"=>"Bakery 1", "external_id"=>"external", "opening_hours"=>"10:00", "closing_hours"=>"24:00", "period_size"=>"1.0", "service_type"=>"35"}}
+Unpermitted parameters: service_type
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStamp::ServiceType Exists (0.1ms)[0m  SELECT 1 AS one FROM "stamp_service_types" WHERE "stamp_service_types"."id" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 5ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "stamp_services"
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35mStamp::ServiceType Load (0.1ms)[0m  SELECT "stamp_service_types".* FROM "stamp_service_types"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "stamp_service_types" WHERE "stamp_service_types"."id" = ?  [["id", 35]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "stamp_service_types" WHERE "stamp_service_types"."id" = ?[0m  [["id", 36]]
+  [1m[35m (0.5ms)[0m  commit transaction
