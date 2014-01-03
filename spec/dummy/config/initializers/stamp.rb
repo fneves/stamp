@@ -1,0 +1,1 @@
+Stamp.customer_class = "User"

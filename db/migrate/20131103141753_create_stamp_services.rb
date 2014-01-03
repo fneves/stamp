@@ -9,6 +9,7 @@ class CreateStampServices < ActiveRecord::Migration
       #Period size in minutes
       t.integer :period_size
       t.references :service_type
+      t.integer :payment_method
       t.timestamps
     end
     add_reference :stamp_service_types, :service_type, index: true

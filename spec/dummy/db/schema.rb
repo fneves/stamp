@@ -11,11 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131103141810) do
+ActiveRecord::Schema.define(version: 20140103151101) do
 
   create_table "stamp_pre_reservations", force: true do |t|
     t.integer  "customer_id"
-    t.integer  "time_slot_id"
     t.integer  "service_id"
     t.decimal  "total_price"
     t.datetime "created_at"
@@ -33,7 +32,6 @@ ActiveRecord::Schema.define(version: 20131103141810) do
 
   create_table "stamp_reservations", force: true do |t|
     t.integer  "customer_id"
-    t.integer  "time_slot_id"
     t.integer  "service_id"
     t.decimal  "total_price"
     t.datetime "created_at"
@@ -57,6 +55,7 @@ ActiveRecord::Schema.define(version: 20131103141810) do
     t.string   "external_id"
     t.integer  "period_size"
     t.integer  "service_type_id"
+    t.integer  "payment_method"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -68,6 +67,10 @@ ActiveRecord::Schema.define(version: 20131103141810) do
     t.integer  "units"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "users", force: true do |t|
+    t.string "name"
   end
 
 end
