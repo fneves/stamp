@@ -68,23 +68,23 @@ module Stamp
         create(:time_slot, reservation_id: reservation.id, service_id: @service_with_bookings.id)
       end
 
-      describe "get booked_slots" do
+      #describe "get booked_slots" do
 
-        it "Shows that there are no bookings on the Service 1" do
-          req = {service: {:service_id => @service.id, }}
-          get :booked_slots,  req, use_route: :stamp
-          expect(response.status).to eq(200)
-          expect(response.body).to eq("{}")
-        end
+       # it "Shows that there are no bookings on the Service 1" do
+       #   req = {service: {:service_id => @service.id, }}
+       #   get :booked_slots,  req, use_route: :stamp
+       #   expect(response.status).to eq(200)
+       #   expect(response.body).to eq("{}")
+       # end
 
-        it "Shows that there are bookings on the service 2" do
-          get :booked_slots, :service_id => @service_with_bookings.id,
-              from:'2013/01/01 00:00:00',to:'2015/01/01 00:00:00', use_route: :stamp
-          expect(response.status).to eq(200)
-          expect(response.body).to eq("{\"booked_slots\":{\"2014-01-01\":[{\"start\":\"2014-01-01T10:00:00.000Z\",\"end\":\"2014-01-01T10:30:00.000Z\"}]}}")
-        end
+       # it "Shows that there are bookings on the service 2" do
+       #   get :booked_slots, :service_id => @service_with_bookings.id,
+       #       from:'2013/01/01 00:00:00',to:'2015/01/01 00:00:00', use_route: :stamp
+       #   expect(response.status).to eq(200)
+       #   expect(response.body).to eq("{\"booked_slots\":{\"2014-01-01\":[{\"start\":\"2014-01-01T10:00:00.000Z\",\"end\":\"2014-01-01T10:30:00.000Z\"}]}}")
+       # end
 
-      end
+      #end
 
       after(:all) do
         TimeSlot.all.each { |item| item.destroy }

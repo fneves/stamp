@@ -11,19 +11,34 @@ module Stamp
         end
 
         def create
-
+           @reservation = Reservation.new(reservation_params)
+           
+           if @reservation.save
+             render(json: {service: @reservation })
+           else
+             render :json => { :errors => @reservation.errors.full_messages }, :status => 422
+           end
         end
 
         def update
-
+          respond_to do |format|
+             if @reservation.update_attributes(reservation_params)
+               format.json { head :no_content }
+             else
+               format.json { render json: @reservation.errors }
+             end
+          end
         end
 
         def show
-
+          respond_to do |format|
+            format.json { render json: @reservation }
+          end
         end
 
         def destroy
-
+          #@reservation = Reservation.find(reservation_id_params)
+          @reservation.destroy
         end
 
         def payment
@@ -46,6 +61,14 @@ module Stamp
 
         def pay_params
           params.require(:payment).permit(:cc_number, :cc_name, :cvc, :exp_month, :exp_year, :payment_gateway)
+        end
+        
+        def reservation_params
+          params.require(:reservation).permit(:from, :to, :service_id)
+        end
+        
+        def reservation_id_params
+          params.require(:reservation).permit(:id)
         end
 
       end
