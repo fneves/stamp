@@ -11,7 +11,11 @@ module Stamp
           return false, 'start date must be greater or equal than today' if from > Date.today
           return false, 'end date must be greater the end date' if from >= to
           return false, "date interval must be less than #{MAX_DATE_INTERVAL}" if from - to > MAX_DATE_INTERVAL;
+          @from = DateTime.parse(start_date)
+          @to = DateTime.parse(end_date)
           return true, 'interval is valid'
+        rescue ArgumentError
+          return false, 'start date or end date are not in a valid timestamp format ex:(2013/12/24 00:00:00)'
         end
 
       end

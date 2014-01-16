@@ -76,7 +76,7 @@ module Stamp
 
         it "Shows that there are no bookings on the Service 1" do
           get :booked_slots,  service_id: @service.id,
-              from:'2013/01/01 00:00:00',to:'2015/01/01 00:00:00', use_route: :stamp
+              from:'2013/01/01 00:00:00', to:'2015/01/01 00:00:00', use_route: :stamp
           expect(response.status).to eq(200)
           expect(response.body).to eq("{\"booked_slots\":{}}")
         end
@@ -95,7 +95,7 @@ module Stamp
 
         it "Shows that there are no bookings on the Service 1" do
           get :availability,  service_id: @service.id,
-              from:'2014/01/01 00:00:00',to:'2014/01/02 00:00:00', use_route: :stamp
+              from:'2014/01/01 00:00:00', to:'2014/01/02 00:00:00', use_route: :stamp
           expect(response.status).to eq(200)
           expect(JSON.parse(response.body)["availability"].size).to eq(2)
           expect(JSON.parse(response.body)["availability"]["2014-01-01"].size).to eq(20)
@@ -104,7 +104,7 @@ module Stamp
 
         it "Shows that there are no bookings on the Service 2" do
           get :availability,  service_id: @service_with_bookings.id,
-              from:'2014/01/01 00:00:00',to:'2014/01/02 20:00:00', use_route: :stamp
+              from:'2014/01/01 00:00:00', to:'2014/01/02 20:00:00', use_route: :stamp
           expect(response.status).to eq(200)
           expect(JSON.parse(response.body)["availability"].size).to eq(2)
           expect(JSON.parse(response.body)["availability"]["2014-01-01"].size).to eq(19)

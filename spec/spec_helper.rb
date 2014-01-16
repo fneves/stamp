@@ -14,3 +14,9 @@ RSpec.configure do |config|
   config.infer_base_class_for_anonymous_controllers = false
   config.order = "random"
 end
+
+ActionController::Base.class_eval do
+  def rescue_action(exception)
+    raise exception
+  end
+end

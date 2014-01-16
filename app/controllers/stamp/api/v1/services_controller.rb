@@ -14,7 +14,7 @@ module Stamp
           return render( json: 'Service was not found! Please select a valid service', status: 400) unless @service
           valid, validation_message = validate_date_interval(parameters[:from], parameters[:to])
           return render(json: { error: validation_message }, status: 400) unless valid
-          availability = @service.availability(parameters[:from], parameters[:to])
+          availability = @service.availability(@from, @to)
           return render(json: { availability: availability }, status: 200)
         end
 
@@ -23,7 +23,7 @@ module Stamp
           return render( json: 'Service was not found! Please select a valid service', status: 400) unless @service
           valid, validation_message = validate_date_interval(parameters[:from], parameters[:to])
           return render(json: { error: validation_message }, status: 400) unless valid
-          slots = @service.booked_slots(parameters[:from], parameters[:to])
+          slots = @service.booked_slots(@from, @to)
           return render(json: { booked_slots: slots }, status: 200)
         end
 

@@ -16,7 +16,7 @@ module Stamp
 
     def availability(start_timestamp, end_timestamp)
       occupied_slots = booked_slots(start_timestamp, end_timestamp)
-      availability = (Date.parse(start_timestamp)..Date.parse(end_timestamp)).map do |date|
+      availability = (start_timestamp.to_date..end_timestamp.to_date).map do |date|
         daily_occupied_slots = occupied_slots[date]
         [date, gen_daily_calendar(date, daily_occupied_slots)]
       end
@@ -34,11 +34,11 @@ module Stamp
     end
 
     def gen_opening_hours(date)
-      DateTime.parse(date.to_s) + Rational(opening_hours, 1.day.to_i)
+      date.to_datetime + Rational(opening_hours, 1.day.to_i)
     end
 
     def gen_closing_hours(date)
-      DateTime.parse(date.to_s) + Rational(closing_hours, 1.day.to_i)
+      date.to_datetime + Rational(closing_hours, 1.day.to_i)
     end
 
     private
@@ -61,12 +61,12 @@ module Stamp
       first_booked_slot = booked_slots.shift
       result = []
       while(start_time < end_time) do
-        if first_booked_slot.nil? || start_time < first_booked_slot.from
+        if first_booked_slot.nil? || start_time < first_booked_slot[:start]
           time_slot = build_time_slot(start_time)
           result.push(time_slot)
           start_time = time_slot[:end]
         else
-          start_time = first_booked_slot.from
+          start_time = first_booked_slot[:end]
           first_booked_slot = booked_slots.shift
         end
       end
