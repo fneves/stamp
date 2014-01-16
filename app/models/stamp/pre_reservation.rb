@@ -1,12 +1,12 @@
 module Stamp
   class PreReservation < ActiveRecord::Base
     attr_accessor :customer_id
-    #belongs_to :customer, class_name: Stamp.customer_class.to_s
+    belongs_to :customer, class_name: Stamp.customer_class.to_s
     has_one :stamp_time_slot, :class_name => 'Stamp::TimeSlot', :foreign_key => "pre_reservation_id"
     belongs_to :stamp_service, :class_name => 'Stamp::Service', :foreign_key => "service_id"
 
-    #before_save :set_customer
-    #after_find :set_customer
+    before_save :set_customer
+    after_find :set_customer
 
     private
 
