@@ -1,9 +1,9 @@
 module Stamp
   class Service < ActiveRecord::Base
-    belongs_to :stamp_service_type, :class_name => 'Stamp::ServiceType'
-    has_many :stamp_pre_reservations, :class_name => 'Stamp::PreReservation'
-    has_many :stamp_reservations, :class_name => 'Stamp::Reservation'
-    has_many :stamp_price_ratings, :class_name => 'Stamp::PriceRating'
+    belongs_to :stamp_service_type, :class_name => 'Stamp::ServiceType', :foreign_key => "service_type_id"
+    has_many :stamp_pre_reservations, :class_name => 'Stamp::PreReservation', :foreign_key => "service_id"
+    has_many :stamp_reservations, :class_name => 'Stamp::Reservation', :foreign_key => "service_id"
+    has_many :stamp_price_ratings, :class_name => 'Stamp::PriceRating', :foreign_key => "service_id"
 
     ONLINE_PAYMENT = 0
     ASYNC_PAYMENT = 1
