@@ -89,6 +89,13 @@ module Stamp
           expect(response.status).to eq(200)
         end
 
+        it "Tries to access the booked slots to a service that does not exist" do
+          get :booked_slots,  service_id: -1,
+              from:'2014/01/01 00:00:00', to:'2014/01/02 00:00:00', use_route: :stamp
+          expect(response.status).to eq(400)
+          expect(response.body).to eq('Service was not found! Please select a valid service')
+        end
+
       end
 
       describe "get availability" do
@@ -109,6 +116,13 @@ module Stamp
           expect(JSON.parse(response.body)["availability"].size).to eq(2)
           expect(JSON.parse(response.body)["availability"]["2014-01-01"].size).to eq(19)
           expect(JSON.parse(response.body)["availability"]["2014-01-02"].size).to eq(16)
+        end
+
+        it "Tries to access the availability to a service that does not exist" do
+          get :availability,  service_id: -1,
+              from:'2014/01/01 00:00:00', to:'2014/01/02 00:00:00', use_route: :stamp
+          expect(response.status).to eq(400)
+          expect(response.body).to eq('Service was not found! Please select a valid service')
         end
 
       end

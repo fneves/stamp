@@ -43,10 +43,6 @@ module Stamp
 
     private
 
-    def free_periods(timestamp1, timestamp2)
-      ((timestamp2.to_time - timestamp1.to_time).round/60/period_size).round
-    end
-
     def service_type_exists
       if !ServiceType.where(id: service_type_id).exists? then
         errors.add(:service_type_id, 'A valid service type is required.')
