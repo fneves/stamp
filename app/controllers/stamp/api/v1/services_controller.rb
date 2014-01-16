@@ -10,14 +10,16 @@ module Stamp
         before_action :set_service , only: [:availability, :booked_slots, :destroy, :update]
 
         def availability
+          parameters = availability_slots_params
           return render( json: 'Service was not found! Please select a valid service', status: 400) unless @service
-          valid, validation_message = validate_date_interval(params[:from_date], params[:from_date])
+          valid, validation_message = validate_date_interval(parameters[:from], parameters[:to])
           return render(json: { error: validation_message }, status: 400) unless valid
-          @service.availability(params[:from_date], params[:from_date])
+          availability = @service.availability(parameters[:from], parameters[:to])
+          return render(json: { availability: availability }, status: 200)
         end
 
         def booked_slots
-          parameters = booked_slots_params
+          parameters = availability_slots_params
           return render( json: 'Service was not found! Please select a valid service', status: 400) unless @service
           valid, validation_message = validate_date_interval(parameters[:from], parameters[:to])
           return render(json: { error: validation_message }, status: 400) unless valid
@@ -59,7 +61,7 @@ module Stamp
           params.permit(:service_id)
         end
 
-        def booked_slots_params
+        def availability_slots_params
           params.permit(:from, :to, :service_id)
         end
 

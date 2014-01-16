@@ -11,9 +11,9 @@ FactoryGirl.define do
   factory :service, class: Stamp::Service do
     sequence(:name){|n| "service #{n}"}
     sequence(:external_id){|n| "external #{n}"}
-    sequence(:opening_hours){|n| " 10:#{n}#{n}"}
-    sequence(:closing_hours){|n| " 24:#{n}#{n}"}
-    period_size 30
+    opening_hours 10.hours
+    closing_hours 20.hours
+    period_size 30.minutes
     payment_method 0
     owner_id 1
     service_type_id nil
@@ -32,7 +32,7 @@ FactoryGirl.define do
   end
 
   factory :time_slot, class: Stamp::TimeSlot do
-    from "2014-01-01 10:00:00"
+    from DateTime.parse("2014-01-01 10:00:00")
     reservation_id { Stamp::Reservation.first.id }
     service_id { Stamp::Service.first.id }
     units 1
@@ -40,7 +40,7 @@ FactoryGirl.define do
 
   factory :price_rating, class: Stamp::PriceRating do
     from "2013-10-10 10:00:00"
-    from "2014-10-10 10:00:00"
+    to "2014-10-10 10:00:00"
     service_id { Stamp::Service.first.id }
     value 10.5
   end

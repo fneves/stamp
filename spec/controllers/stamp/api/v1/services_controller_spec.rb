@@ -65,26 +65,53 @@ module Stamp
         @service = create(:service, service_type_id: @service_type.id)
         @service_with_bookings = create(:service, service_type_id: @service_type.id)
         reservation = create(:reservation, service_id: @service_with_bookings.id, customer_id: @customer.id)
+        reservation2 = create(:reservation, service_id: @service_with_bookings.id, customer_id: @customer.id)
+        reservation3 = create(:reservation, service_id: @service_with_bookings.id, customer_id: @customer.id)
         create(:time_slot, reservation_id: reservation.id, service_id: @service_with_bookings.id)
+        create(:time_slot, reservation_id: reservation3.id, service_id: @service_with_bookings.id, from: "2014-01-02 12:00:00", units: 3)
+        create(:time_slot, reservation_id: reservation2.id, service_id: @service_with_bookings.id, from: "2014-01-02 10:00:00")
       end
 
-      #describe "get booked_slots" do
+      describe "get booked_slots" do
 
-       # it "Shows that there are no bookings on the Service 1" do
-       #   req = {service: {:service_id => @service.id, }}
-       #   get :booked_slots,  req, use_route: :stamp
-       #   expect(response.status).to eq(200)
-       #   expect(response.body).to eq("{}")
-       # end
+        it "Shows that there are no bookings on the Service 1" do
+          get :booked_slots,  service_id: @service.id,
+              from:'2013/01/01 00:00:00',to:'2015/01/01 00:00:00', use_route: :stamp
+          expect(response.status).to eq(200)
+          expect(response.body).to eq("{\"booked_slots\":{}}")
+        end
 
-       # it "Shows that there are bookings on the service 2" do
-       #   get :booked_slots, :service_id => @service_with_bookings.id,
-       #       from:'2013/01/01 00:00:00',to:'2015/01/01 00:00:00', use_route: :stamp
-       #   expect(response.status).to eq(200)
-       #   expect(response.body).to eq("{\"booked_slots\":{\"2014-01-01\":[{\"start\":\"2014-01-01T10:00:00.000Z\",\"end\":\"2014-01-01T10:30:00.000Z\"}]}}")
-       # end
+        it "Shows that there are bookings on the service 2" do
+          get :booked_slots, :service_id => @service_with_bookings.id,
+              from:'2013/01/01 00:00:00',to:'2015/01/01 00:00:00', use_route: :stamp
+          expected_response = "{\"booked_slots\":{\"2014-01-01\":[{\"start\":\"2014-01-01T10:00:00+00:00\",\"end\":\"2014-01-01T10:30:00+00:00\"}],\"2014-01-02\":[{\"start\":\"2014-01-02T10:00:00+00:00\",\"end\":\"2014-01-02T10:30:00+00:00\"},{\"start\":\"2014-01-02T12:00:00+00:00\",\"end\":\"2014-01-02T13:30:00+00:00\"}]}}"
+          expect(response.body).to eq(expected_response)
+          expect(response.status).to eq(200)
+        end
 
-      #end
+      end
+
+      describe "get availability" do
+
+        it "Shows that there are no bookings on the Service 1" do
+          get :availability,  service_id: @service.id,
+              from:'2014/01/01 00:00:00',to:'2014/01/02 00:00:00', use_route: :stamp
+          expect(response.status).to eq(200)
+          expect(JSON.parse(response.body)["availability"].size).to eq(2)
+          expect(JSON.parse(response.body)["availability"]["2014-01-01"].size).to eq(20)
+          expect(JSON.parse(response.body)["availability"]["2014-01-02"].size).to eq(20)
+        end
+
+        it "Shows that there are no bookings on the Service 2" do
+          get :availability,  service_id: @service_with_bookings.id,
+              from:'2014/01/01 00:00:00',to:'2014/01/02 20:00:00', use_route: :stamp
+          expect(response.status).to eq(200)
+          expect(JSON.parse(response.body)["availability"].size).to eq(2)
+          expect(JSON.parse(response.body)["availability"]["2014-01-01"].size).to eq(19)
+          expect(JSON.parse(response.body)["availability"]["2014-01-02"].size).to eq(16)
+        end
+
+      end
 
       after(:all) do
         TimeSlot.all.each { |item| item.destroy }

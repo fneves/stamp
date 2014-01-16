@@ -1,22 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af4a6b21-77b2-455a-8e9e-369b973b6ea2" name="Default" comment="Added RSpec + FactoryGirl.&#10;Adding unit tests. CHangi">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/dummy/db/migrate/20140103151101_create_users.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/dummy/config/initializers/stamp.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/dummy/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/dummy/db/development.sqlite3" afterPath="$PROJECT_DIR$/spec/dummy/db/development.sqlite3" />
+    <list default="true" id="af4a6b21-77b2-455a-8e9e-369b973b6ea2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/dummy/db/test.sqlite3" afterPath="$PROJECT_DIR$/spec/dummy/db/test.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131103141753_create_stamp_services.rb" afterPath="$PROJECT_DIR$/db/migrate/20131103141753_create_stamp_services.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131103141804_create_stamp_reservations.rb" afterPath="$PROJECT_DIR$/db/migrate/20131103141804_create_stamp_reservations.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131103141810_create_stamp_pre_reservations.rb" afterPath="$PROJECT_DIR$/db/migrate/20131103141810_create_stamp_pre_reservations.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/stamp/api/v1/api_input_validations.rb" afterPath="$PROJECT_DIR$/app/helpers/stamp/api/v1/api_input_validations.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/dummy/config/application.rb" afterPath="$PROJECT_DIR$/spec/dummy/config/application.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/dummy/log/development.log" afterPath="$PROJECT_DIR$/spec/dummy/log/development.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/factories.rb" afterPath="$PROJECT_DIR$/spec/factories.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/dummy/config/routes.rb" afterPath="$PROJECT_DIR$/spec/dummy/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/dummy/db/schema.rb" afterPath="$PROJECT_DIR$/spec/dummy/db/schema.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/stamp/service.rb" afterPath="$PROJECT_DIR$/app/models/stamp/service.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/stamp/api/v1/services_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/stamp/api/v1/services_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/controllers/stamp/api/v1/services_controller_spec.rb" afterPath="$PROJECT_DIR$/spec/controllers/stamp/api/v1/services_controller_spec.rb" />
@@ -26,7 +14,7 @@
     <ignored path="stamp.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/stamp.gemspec" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1387896845354" ignored="false" />
-    <file path="/Dummy.txt" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1388606150723" ignored="false" />
+    <file path="/Dummy.txt" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1389727282376" ignored="false" />
     <file path="/MIT-LICENSE" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1383481087976" ignored="false" />
     <file path="/20131103141615_create_stamp_rate_types.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1386713763992" ignored="false" />
     <file path="/20131103141639_create_stamp_time_slots.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1383488634373" ignored="false" />
@@ -37,15 +25,15 @@
     <file path="/routes.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1386715024593" ignored="false" />
     <file path="/20131103141659_create_stamp_service_types.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1386714262569" ignored="false" />
     <file path="/20131103141711_create_stamp_price_ratings.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1383498880477" ignored="false" />
-    <file path="/20131103141753_create_stamp_services.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1388668205577" ignored="false" />
+    <file path="/20131103141753_create_stamp_services.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1389210913489" ignored="false" />
     <file path="/development.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1383513380489" ignored="false" />
     <file path="/home_controller.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1383513473126" ignored="false" />
     <file path="/stamp.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1388693477259" ignored="false" />
     <file path="/application.html.haml" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1383602303516" ignored="false" />
     <file path="/_top_bar.html.haml" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1384101555145" ignored="false" />
-    <file path="/Ruby Console" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1388670627695" ignored="false" />
+    <file path="/Ruby Console" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1389726999571" ignored="false" />
     <file path="/reservations_controller.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1387802604715" ignored="false" />
-    <file path="/service.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1388774556198" ignored="false" />
+    <file path="/service.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1389738611842" ignored="false" />
     <file path="/application.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1388671470457" ignored="false" />
     <file path="/a.dummy" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1388151989998" ignored="false" />
     <file path="/20131105211538_add_devise_to_admin_users.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1383686282402" ignored="false" />
@@ -64,7 +52,7 @@
     <file path="/new.html.haml" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1384763380476" ignored="false" />
     <file path="/new.html.erb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1385302713383" ignored="false" />
     <file path="/_footer.html.erb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1384766862756" ignored="false" />
-    <file path="/fragment.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1388775445198" ignored="false" />
+    <file path="/fragment.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1389738955830" ignored="false" />
     <file path="/after_signup_controller.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1385914754401" ignored="false" />
     <file path="/20131120204058_add_profile_image_to_user_profile.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1384980197917" ignored="false" />
     <file path="/20131120203923_create_user_profile.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1385305467811" ignored="false" />
@@ -84,9 +72,9 @@
     <file path="/reservations_controller_test.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1386271336475" ignored="false" />
     <file path="/input_validations.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1386274240434" ignored="false" />
     <file path="/reservations_checks.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1386273503700" ignored="false" />
-    <file path="/services_controller.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1388775512641" ignored="false" />
+    <file path="/services_controller.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1389734602363" ignored="false" />
     <file path="/services_controller_test.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1387896041587" ignored="false" />
-    <file path="/api_input_validations.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1388763093677" ignored="false" />
+    <file path="/api_input_validations.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1389734429105" ignored="false" />
     <file path="/reservations_helper.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1386280010793" ignored="false" />
     <file path="/services_helper.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1386280035100" ignored="false" />
     <file path="/Rakefile" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1387982248386" ignored="false" />
@@ -95,10 +83,12 @@
     <file path="/price_rating.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1387800052286" ignored="false" />
     <file path="/api_controller.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1387802842101" ignored="false" />
     <file path="/v1:services_controller_controller_spec.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1387896490605" ignored="false" />
-    <file path="/services_controller_spec.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1388762974229" ignored="false" />
+    <file path="/services_controller_spec.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1389737900397" ignored="false" />
     <file path="/service_factory.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1387897333106" ignored="false" />
-    <file path="/factories.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1388762141857" ignored="false" />
+    <file path="/factories.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1389738539162" ignored="false" />
     <file path="/20140103151101_create_users.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1388761891888" ignored="false" />
+    <file path="$PROJECT_DIR$/../hubblin/app/controllers/after_signup_controller.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1388776808474" ignored="false" />
+    <file path="/temp.rb" changelist="af4a6b21-77b2-455a-8e9e-369b973b6ea2" time="1389210616199" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,70 +148,89 @@
     <favorites_list name="stamp" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.46126255">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="factories.rb" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/spec/factories.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="34" column="20" selection-start="867" selection-end="867" vertical-scroll-proportion="1.0584415">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="alias_tracker.rb" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@global/gems/activerecord-4.0.1/lib/active_record/associations/alias_tracker.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="3" column="0" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="services_controller_spec.rb" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/spec/controllers/stamp/api/v1/services_controller_spec.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="87" column="117" selection-start="3294" selection-end="3294" vertical-scroll-proportion="2.2360802">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="services_controller.rb" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/controllers/stamp/api/v1/services_controller.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="16" column="39" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="api_input_validations.rb" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/helpers/stamp/api/v1/api_input_validations.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="13" column="52" selection-start="681" selection-end="681" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="service.rb" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/models/stamp/service.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="44" column="77" selection-start="1540" selection-end="1540" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="factories.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/factories.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="39" selection-start="897" selection-end="897" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20131103141615_create_stamp_time_slots.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20131103141615_create_stamp_time_slots.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="services_controller_spec.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spec/controllers/stamp/api/v1/services_controller_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="107" column="37" selection-start="4867" selection-end="4867" vertical-scroll-proportion="0.5420561">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="services_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/stamp/api/v1/services_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="65" selection-start="1392" selection-end="1392" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="api_input_validations.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/helpers/stamp/api/v1/api_input_validations.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="73" selection-start="520" selection-end="520" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="service.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/stamp/service.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="34" selection-start="1029" selection-end="1029" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rescue.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@global/gems/actionpack-4.0.1/lib/action_controller/metal/rescue.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="0" selection-start="1117" selection-end="1117" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="presence.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@global/gems/activerecord-4.0.1/lib/active_record/validations/presence.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="0" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20131103141753_create_stamp_services.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20131103141753_create_stamp_services.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="56" selection-start="365" selection-end="365" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -247,17 +256,17 @@
         <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
         <option value="$PROJECT_DIR$/Rakefile" />
         <option value="$PROJECT_DIR$/spec/dummy/config/routes.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20131103141753_create_stamp_services.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20131103141804_create_stamp_reservations.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20131103141810_create_stamp_pre_reservations.rb" />
         <option value="$PROJECT_DIR$/spec/dummy/config/application.rb" />
         <option value="$PROJECT_DIR$/spec/dummy/config/initializers/stamp.rb" />
         <option value="$PROJECT_DIR$/spec/dummy/db/migrate/20140103151101_create_users.rb" />
         <option value="$PROJECT_DIR$/spec/dummy/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20131103141753_create_stamp_services.rb" />
         <option value="$PROJECT_DIR$/app/helpers/stamp/api/v1/api_input_validations.rb" />
-        <option value="$PROJECT_DIR$/app/models/stamp/service.rb" />
-        <option value="$PROJECT_DIR$/spec/factories.rb" />
         <option value="$PROJECT_DIR$/app/controllers/stamp/api/v1/services_controller.rb" />
+        <option value="$PROJECT_DIR$/spec/factories.rb" />
+        <option value="$PROJECT_DIR$/app/models/stamp/service.rb" />
         <option value="$PROJECT_DIR$/spec/controllers/stamp/api/v1/services_controller_spec.rb" />
       </list>
     </option>
@@ -299,7 +308,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -328,14 +336,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -351,12 +364,12 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="FullScreen" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
-    <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
+    <property name="FullScreen" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -380,8 +393,8 @@
       <recent name="$PROJECT_DIR$/test/controllers/stamp/api/v1" />
     </key>
   </component>
-  <component name="RunManager" selected="RSpec.Api::V1::ServicesController availability get booked_slots Shows that there are bookings on the service 2">
-    <configuration default="false" name="Api::V1::ServicesController create Services POST #create creates a service" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+  <component name="RunManager" selected="RSpec.Api::V1::ServicesController availability get availability Shows that there are no bookings on the Service 2">
+    <configuration default="false" name="Api::V1::ServicesController availability get booked_slots Shows that there are no bookings on the Service 1" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="stamp" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -405,42 +418,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/controllers/stamp/api/v1/services_controller_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Api::V1::ServicesController create Services POST #create creates a service" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Api::V1::ServicesController create Services" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-      <module name="stamp" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="RAILS_ENV" value="test" />
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/controllers/stamp/api/v1/services_controller_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Api::V1::ServicesController create Services" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Api::V1::ServicesController availability get booked_slots Shows that there are no bookings on the Service 1" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -450,76 +428,6 @@
       <RunnerSettings RunnerId="RubyDebugRunner" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyDebugRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Api::V1::ServicesController create Services POST #create" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-      <module name="stamp" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="RAILS_ENV" value="test" />
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/controllers/stamp/api/v1/services_controller_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Api::V1::ServicesController create Services POST #create" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Api::V1::ServicesController availability get booked_slots Shows that there are no bookings on the Bakery1 Service" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-      <module name="stamp" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="RAILS_ENV" value="test" />
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/controllers/stamp/api/v1/services_controller_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Api::V1::ServicesController availability get booked_slots Shows that there are no bookings on the Bakery1 Service" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
@@ -548,6 +456,115 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Api::V1::ServicesController availability get booked_slots Shows that there are bookings on the service 2" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <RunnerSettings RunnerId="RubyDebugRunner" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyDebugRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Api::V1::ServicesController availability get availability Shows that there are no bookings on the Service 1" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="stamp" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/controllers/stamp/api/v1/services_controller_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Api::V1::ServicesController availability get availability Shows that there are no bookings on the Service 1" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <RunnerSettings RunnerId="RubyDebugRunner" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyDebugRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Api::V1::ServicesController availability get booked_slots" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="stamp" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/controllers/stamp/api/v1/services_controller_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Api::V1::ServicesController availability get booked_slots" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Api::V1::ServicesController availability get availability Shows that there are no bookings on the Service 2" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="stamp" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/controllers/stamp/api/v1/services_controller_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Api::V1::ServicesController availability get availability Shows that there are no bookings on the Service 2" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -983,19 +1000,19 @@
       <item index="3" class="java.lang.String" itemvalue="Rails.Development: stamp" />
       <item index="4" class="java.lang.String" itemvalue="Rake.test" />
       <item index="5" class="java.lang.String" itemvalue="Rake.spec" />
-      <item index="6" class="java.lang.String" itemvalue="RSpec.Api::V1::ServicesController create Services POST #create creates a service" />
-      <item index="7" class="java.lang.String" itemvalue="RSpec.Api::V1::ServicesController create Services" />
-      <item index="8" class="java.lang.String" itemvalue="RSpec.Api::V1::ServicesController create Services POST #create" />
-      <item index="9" class="java.lang.String" itemvalue="RSpec.Api::V1::ServicesController availability get booked_slots Shows that there are no bookings on the Bakery1 Service" />
-      <item index="10" class="java.lang.String" itemvalue="RSpec.Api::V1::ServicesController availability get booked_slots Shows that there are bookings on the service 2" />
+      <item index="6" class="java.lang.String" itemvalue="RSpec.Api::V1::ServicesController availability get booked_slots Shows that there are no bookings on the Service 1" />
+      <item index="7" class="java.lang.String" itemvalue="RSpec.Api::V1::ServicesController availability get booked_slots Shows that there are bookings on the service 2" />
+      <item index="8" class="java.lang.String" itemvalue="RSpec.Api::V1::ServicesController availability get availability Shows that there are no bookings on the Service 1" />
+      <item index="9" class="java.lang.String" itemvalue="RSpec.Api::V1::ServicesController availability get booked_slots" />
+      <item index="10" class="java.lang.String" itemvalue="RSpec.Api::V1::ServicesController availability get availability Shows that there are no bookings on the Service 2" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="RSpec.Api::V1::ServicesController availability get booked_slots Shows that there are bookings on the service 2" />
-        <item index="1" class="java.lang.String" itemvalue="RSpec.Api::V1::ServicesController availability get booked_slots Shows that there are no bookings on the Bakery1 Service" />
-        <item index="2" class="java.lang.String" itemvalue="RSpec.Api::V1::ServicesController create Services POST #create" />
-        <item index="3" class="java.lang.String" itemvalue="RSpec.Api::V1::ServicesController create Services POST #create creates a service" />
-        <item index="4" class="java.lang.String" itemvalue="RSpec.Api::V1::ServicesController create Services" />
+        <item index="0" class="java.lang.String" itemvalue="RSpec.Api::V1::ServicesController availability get availability Shows that there are no bookings on the Service 2" />
+        <item index="1" class="java.lang.String" itemvalue="RSpec.Api::V1::ServicesController availability get booked_slots Shows that there are bookings on the service 2" />
+        <item index="2" class="java.lang.String" itemvalue="RSpec.Api::V1::ServicesController availability get booked_slots" />
+        <item index="3" class="java.lang.String" itemvalue="RSpec.Api::V1::ServicesController availability get availability Shows that there are no bookings on the Service 1" />
+        <item index="4" class="java.lang.String" itemvalue="RSpec.Api::V1::ServicesController availability get booked_slots Shows that there are no bookings on the Service 1" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1026,17 +1043,20 @@
       <created>1387984950584</created>
       <updated>1387984950584</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added booked_slots test&#10;Added User entity to dummy app.&#10;Fixed booked slots algorithm.&#10;Added payment_method field to Services.&#10;Fixed api booked_slots date validation.&#10;Created test factories for stamp entities">
+      <created>1388775733367</created>
+      <updated>1388775733367</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3254364" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -1053,11 +1073,12 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23027259" sideWeight="0.6109726" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38902742" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3400287" sideWeight="0.6134663" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38653368" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3254364" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756132" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1105,7 +1126,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added RSpec + FactoryGirl.&#10;Added Service registration API and correspondent unit tests.&#10;Added Booked Slots Code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added booked_slots test&#10;Added User entity to dummy app.&#10;Fixed booked slots algorithm.&#10;Added payment_method field to Services.&#10;Fixed api booked_slots date validation.&#10;Created test factories for stamp entities" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1123,6 +1144,7 @@
     <MESSAGE value="Updated database model to include more fields in the services entity.&#10;Removed rate_type from database model.&#10;Added booked_slots route." />
     <MESSAGE value="Fixed all the entity relations" />
     <MESSAGE value="Added RSpec + FactoryGirl.&#10;Added Service registration API and correspondent unit tests.&#10;Added Booked Slots Code" />
+    <MESSAGE value="Added booked_slots test&#10;Added User entity to dummy app.&#10;Fixed booked slots algorithm.&#10;Added payment_method field to Services.&#10;Fixed api booked_slots date validation.&#10;Created test factories for stamp entities" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1143,16 +1165,6 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/app/models/stamp/service.rb</url>
-          <line>39</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/app/controllers/stamp/api/v1/services_controller.rb</url>
-          <line>12</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/spec/controllers/stamp/api/v1/services_controller_spec.rb</url>
           <line>10</line>
           <option name="timeStamp" value="22" />
@@ -1163,146 +1175,37 @@
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/controllers/stamp/api/v1/services_controller.rb</url>
+          <line>17</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/models/stamp/service.rb</url>
+          <line>22</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/models/stamp/service.rb</url>
+          <line>20</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/models/stamp/service.rb</url>
+          <line>30</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/spec/controllers/stamp/api/v1/services_controller_spec.rb</url>
-          <line>82</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/app/models/stamp/service.rb</url>
-          <line>21</line>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/app/models/stamp/service.rb</url>
-          <line>32</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/app/models/stamp/service.rb</url>
-          <line>24</line>
-          <option name="timeStamp" value="36" />
+          <line>108</line>
+          <option name="timeStamp" value="63" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="37" />
+      <option name="time" value="64" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@global/gems/activerecord-4.0.1/lib/active_record/associations/alias_tracker.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/dummy/README.rdoc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.26550868">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/dummy/Rakefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/stamp/reservation.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="8" selection-start="21" selection-end="21" vertical-scroll-proportion="0.036057692">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/dummy/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="78" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/dummy/config/initializers/stamp.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@global/gems/activesupport-4.0.1/lib/active_support/callbacks.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="377" column="0" selection-start="11806" selection-end="11806" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/stamp.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="25" selection-start="82" selection-end="96" vertical-scroll-proportion="0.18337408">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/dummy/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="9" selection-start="36" selection-end="36" vertical-scroll-proportion="0.06944445">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/dummy/db/migrate/20140103151101_create_users.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="20" selection-start="127" selection-end="127" vertical-scroll-proportion="0.23076923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@global/gems/actionpack-4.0.1/lib/action_controller/metal/rescue.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.63736266">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/stamp/api/v1/api_input_validations.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="52" selection-start="681" selection-end="681" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/factories.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="20" selection-start="867" selection-end="867" vertical-scroll-proportion="1.0584415">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/stamp/service.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="77" selection-start="1540" selection-end="1540" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/stamp/api/v1/services_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="39" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/controllers/stamp/api/v1/services_controller_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="117" selection-start="3294" selection-end="3294" vertical-scroll-proportion="2.2360802">
-          <folding />
-        </state>
-      </provider>
-    </entry>
   </component>
   <component name="masterDetails">
     <states>

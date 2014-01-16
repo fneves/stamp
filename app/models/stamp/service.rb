@@ -15,25 +15,37 @@ module Stamp
 
 
     def availability(start_timestamp, end_timestamp)
-
+      occupied_slots = booked_slots(start_timestamp, end_timestamp)
+      availability = (Date.parse(start_timestamp)..Date.parse(end_timestamp)).map do |date|
+        daily_occupied_slots = occupied_slots[date]
+        [date, gen_daily_calendar(date, daily_occupied_slots)]
+      end
+      Hash[availability]
     end
 
     def booked_slots(start_timestamp, end_timestamp)
       booked_slots = TimeSlot.where( from: start_timestamp .. end_timestamp, service_id: id).order(:from)
-      daily_buckets = {}
-      booked_slots.each do |booked_slot|
-        daily_slots = daily_buckets[booked_slot.from.to_date]
-        if daily_slots.nil?
-          daily_slots = []
-          daily_buckets[booked_slot.from.to_date] = daily_slots
-        end
-        end_time = booked_slot.from + (booked_slot.units * period_size).minutes
-        daily_slots.push({ start: booked_slot.from, end: end_time})
+      booked_slots.inject({}) do |result, booked_slot|
+        slot_date = booked_slot.from.to_date
+        result[slot_date] = [] unless result[slot_date]
+        result[slot_date].push(build_time_slot(booked_slot.from.to_datetime, booked_slot.units))
+        result
       end
-      daily_buckets
+    end
+
+    def gen_opening_hours(date)
+      DateTime.parse(date.to_s) + Rational(opening_hours, 1.day.to_i)
+    end
+
+    def gen_closing_hours(date)
+      DateTime.parse(date.to_s) + Rational(closing_hours, 1.day.to_i)
     end
 
     private
+
+    def free_periods(timestamp1, timestamp2)
+      ((timestamp2.to_time - timestamp1.to_time).round/60/period_size).round
+    end
 
     def service_type_exists
       if !ServiceType.where(id: service_type_id).exists? then
@@ -41,5 +53,28 @@ module Stamp
       end
     end
 
+    #INFO this method can be executed in parallel!!!
+    def gen_daily_calendar(target_date, booked_slots)
+      booked_slots||=[]
+      start_time = gen_opening_hours(target_date)
+      end_time = gen_closing_hours(target_date)
+      first_booked_slot = booked_slots.shift
+      result = []
+      while(start_time < end_time) do
+        if first_booked_slot.nil? || start_time < first_booked_slot.from
+          time_slot = build_time_slot(start_time)
+          result.push(time_slot)
+          start_time = time_slot[:end]
+        else
+          start_time = first_booked_slot.from
+          first_booked_slot = booked_slots.shift
+        end
+      end
+      result
+    end
+
+    def build_time_slot(from_timestamp, units = 1)
+        {start: from_timestamp, end: from_timestamp + Rational((units * period_size),1.day.to_i)}
+    end
   end
 end
