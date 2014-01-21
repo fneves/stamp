@@ -4,6 +4,8 @@ module Stamp
     has_one :stamp_time_slot, :class_name => 'Stamp::TimeSlot', :foreign_key => "reservation_id"
     belongs_to :stamp_service, :class_name => 'Stamp::Service', :foreign_key => "service_id"
 
+    validates_presence_of :total_price
+
     before_save :set_customer
     after_find :set_customer
 
