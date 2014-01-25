@@ -37,6 +37,12 @@ FactoryGirl.define do
     service_id { Stamp::Service.first.id }
   end
 
+  factory :invalid_pre_reservation, class: Stamp::PreReservation do
+    customer_id 1
+    total_price nil
+    service_id nil
+  end
+
   factory :time_slot, class: Stamp::TimeSlot do
     from DateTime.parse("2014-01-01 10:00:00")
     reservation_id { Stamp::Reservation.first.id }

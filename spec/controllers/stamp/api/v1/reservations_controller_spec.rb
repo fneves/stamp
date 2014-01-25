@@ -18,9 +18,9 @@ module Stamp
     end
 
     it "assigns @reservations" do
-      reservation1 = create(:reservation, service_id: @service.id, customer_id: @customer.id)
+      reservation = create(:reservation)
       get :index, use_route: :stamp
-      expect(assigns(:reservations)).to eq([reservation1])
+      expect(assigns(:reservations)).to eq([reservation])
       expect(response.status).to eq(200)
     end
 

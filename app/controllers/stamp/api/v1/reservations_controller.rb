@@ -18,7 +18,6 @@ module Stamp
            if @reservation.save
              render(json: {service: @reservation })
            else
-            puts "asdasdasd"
              render :json => { :errors => @reservation.errors.full_messages }, :status => 422
            end
         end
