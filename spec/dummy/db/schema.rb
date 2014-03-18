@@ -62,6 +62,7 @@ ActiveRecord::Schema.define(version: 20140116003541) do
 
   create_table "stamp_time_slots", force: true do |t|
     t.integer  "reservation_id"
+    t.integer  "pre_reservation_id"
     t.integer  "service_id"
     t.datetime "from"
     t.integer  "units"
