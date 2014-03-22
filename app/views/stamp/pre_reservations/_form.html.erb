@@ -1,0 +1,37 @@
+<%= semantic_form_for( [@service, @pre_reservation] ) do |f| %>
+
+  <% if @pre_reservation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pre_reservation.errors.count, "error") %> prohibited this pre_reservation from being saved:</h2>
+
+      <ul>
+      <% @pre_reservation.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <%end %>
+
+  <%= f.inputs do %>
+
+    <div class="row">
+        <div class="col-sm-5">
+            <%= f.input :total_price %>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-5">
+            <%= f.input :customer_id %>
+        </div>
+    </div>
+
+  <% end %>
+
+  <%= f.actions do %>
+      <%= f.action :submit, :button_html => { :class => 'btn btn-primary', :disable_with => 'Wait...' } %>
+      <%= f.action :cancel, label: 'Cancel', :button_html => { :class => 'btn btn-default', :disable_with => 'Wait...' } %>
+  <% end %>
+
+<% end %>
+

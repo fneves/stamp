@@ -1,3 +1,10 @@
+require 'sass-rails'
+require 'bootstrap-sass'
+require 'formtastic-bootstrap'
+# require 'mongoid'
+# require 'jquery-rails'
+require 'font-awesome-sass'
+
 module Stamp
   class Engine < ::Rails::Engine
     isolate_namespace Stamp

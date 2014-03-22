@@ -1,0 +1,33 @@
+<div class="container">
+
+    <p id="notice"><%#= notice %></p>
+
+    <p>
+        <strong>Customer name:</strong>
+        <%= @pre_reservation.customer.try(:name) %>
+    </p>
+
+    <p>
+        <strong>Service name:</strong>
+        <%= @pre_reservation.stamp_service.try(:name) %>
+    </p>
+
+    <p>
+        <strong>From:</strong>
+        <%= @pre_reservation.stamp_time_slot.try(:from) %>
+    </p>
+
+    <p>
+        <strong>Units:</strong>
+        <%= @pre_reservation.stamp_time_slot.try(:units) %>
+    </p>
+
+    <p>
+        <strong>Total price:</strong>
+        <%= @pre_reservation.try(:total_price) %>
+    </p>
+
+    <%= link_to 'Edit', edit_service_pre_reservation_path(@pre_reservation.stamp_service, @pre_reservation) %>
+
+    <%= link_to 'Back', service_pre_reservations_path %>
+</div>

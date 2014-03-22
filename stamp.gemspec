@@ -18,6 +18,7 @@ Gem::Specification.new do |s|
   s.test_files = Dir["spec/**/*"]
 
   s.add_dependency "rails", "~> 4.0.3"
+  s.add_dependency 'sass-rails' , '~> 4.0.2'
 
   s.add_development_dependency "sqlite3"
   s.add_development_dependency "rspec-rails"
@@ -26,5 +27,7 @@ Gem::Specification.new do |s|
   #s.add_development_dependency "simple_form"
 
   s.add_development_dependency "formtastic-bootstrap", "~> 3.0.0"
+  s.add_development_dependency 'bootstrap-sass'
+  s.add_development_dependency 'font-awesome-sass'
 
 end
