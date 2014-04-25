@@ -1,0 +1,50 @@
+<%= semantic_form_for(@credit_card) do |f| %>
+  <% if @credit_card.errors.any? %>
+  <div id="error_explanation" class="alert alert-danger">
+      <h3><%= pluralize(@credit_card.errors.count, "error") %> prohibited this credit card from being saved:</h3>
+
+      <ul>
+      <% @credit_card.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <!-- TODO: Isto tem de estar no contexto de um user -->
+  <div class="row">
+      <div class="col-sm-5">
+          <%= f.input :customer_id , label: 'Customer'%>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col-sm-5">
+          <%= f.input :card_number , label: 'Card Number'%>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col-sm-5">
+          <%= f.input :name , label: 'Name'%>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col-sm-5">
+          <%= f.input :exp_date_month , label: 'Month Expiration'%>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col-sm-5">
+          <%= f.input :exp_date_year , label: 'Year Expiration'%>
+      </div>
+  </div>
+
+    <%= f.actions do %>
+        <%= f.action :submit, :button_html => { :class => 'btn btn-primary', :disable_with => 'Wait...' } %>
+        <%= f.action :cancel, label: 'Cancel', :button_html => { :class => 'btn btn-default', :disable_with => 'Wait...' } %>
+    <% end %>
+
+<% end %>

@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140116003541) do
+ActiveRecord::Schema.define(version: 20140331213955) do
+
+  create_table "stamp_credit_cards", force: true do |t|
+    t.integer  "customer_id"
+    t.integer  "card_number"
+    t.string   "name"
+    t.integer  "exp_date_month"
+    t.integer  "exp_date_year"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "stamp_pre_reservations", force: true do |t|
     t.integer  "customer_id"
@@ -62,12 +72,12 @@ ActiveRecord::Schema.define(version: 20140116003541) do
 
   create_table "stamp_time_slots", force: true do |t|
     t.integer  "reservation_id"
-    t.integer  "pre_reservation_id"
     t.integer  "service_id"
     t.datetime "from"
     t.integer  "units"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "pre_reservation_id"
   end
 
   create_table "users", force: true do |t|

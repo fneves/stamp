@@ -1,0 +1,35 @@
+<div class="container">
+    <p id="notice"><%= notice %></p>
+
+    <p>
+        <strong>Customer:</strong>
+        <%= @credit_card.id %>
+    </p>
+
+    <p>
+      <strong>Card number:</strong>
+      <%= @credit_card.card_number %>
+    </p>
+
+    <p>
+      <strong>Name:</strong>
+      <%= @credit_card.name %>
+    </p>
+
+    <p>
+      <strong>Exp date month:</strong>
+      <%= @credit_card.exp_date_month %>
+    </p>
+
+    <p>
+      <strong>Exp date year:</strong>
+      <%= @credit_card.exp_date_year %>
+    </p>
+
+    <%= link_to 'Edit', edit_credit_card_path(@credit_card) %> |
+    <%= link_to 'Back', credit_cards_path %>
+</div>
+
+
+
+

@@ -1,0 +1,19 @@
+<div class="container">
+
+    <div class="row">
+        <div class="col-sm-7">
+            <div class="panel panel-default">
+                <div class="panel-heading">My credit cards</div>
+                <div class="panel-body">
+                    <%= render partial: 'list_credit_cards', locals:{ credit_cards: @credit_cards } %>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <%= button_to "Add new credit card", new_credit_card_path, :class => "btn btn-primary", :method => :get  %>
+    <br>
+
+</div>
+

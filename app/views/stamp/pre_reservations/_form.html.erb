@@ -1,8 +1,8 @@
 <%= semantic_form_for( [@service, @pre_reservation] ) do |f| %>
 
   <% if @pre_reservation.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@pre_reservation.errors.count, "error") %> prohibited this pre_reservation from being saved:</h2>
+    <div id="error_explanation" class="alert alert-danger">
+      <h3><%= pluralize(@pre_reservation.errors.count, "error") %> prohibited this pre_reservation from being saved:</h3>
 
       <ul>
       <% @pre_reservation.errors.full_messages.each do |msg| %>

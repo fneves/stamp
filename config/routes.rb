@@ -1,6 +1,8 @@
 Stamp::Engine.routes.draw do
 
 
+  resources :credit_cards
+
   resources :services do
 
     get 'availability', to: 'services#availability', as: 'availability'
@@ -13,9 +15,6 @@ Stamp::Engine.routes.draw do
     end
 
     resources :pre_reservations do
-      #match 'sss' => 'pre_reservation#create', :as => :service_pre_reservation_create, via: [:post]
-      #post "/helpcenter" => "forums#create", :as => :create_forum
-      #get '/services/:id', to: 'patients#show', as: 'patient'
     end
 
   end

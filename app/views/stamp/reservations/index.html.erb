@@ -1,7 +1,7 @@
 <div class="container">
 
-    <div class="row">
-        <div class="col-sm-4">
+    <div class="row" id="reservations_list">
+        <div class="col-sm-7">
             <div class="panel panel-default">
                 <div class="panel-heading">My Reservations</div>
                 <div class="panel-body">
@@ -11,6 +11,18 @@
         </div>
     </div>
 
-    <br>
+    <%= button_to "Add reservation", new_service_reservation_path, class: 'btn btn-primary', :method => :get  %>
+
+     <br>
+
+
+<!-- https://github.com/ankane/groupdate -->
+<!-- Supports PostgreSQL and MySQL -->
+
+<!-- Fábio - just a test case- we should apply this to search menu and use PostgreSQL
+to use group_by_* (groupdate gem)
+ -->
+<%#= column_chart Stamp::Reservation.group_by_month(:created_at).count %>
+<%= column_chart ({"Jan" => 1, "Fev" => 2, "Mar" => 1.2, "Abr" => 0.2, "Mai" => 4 }) %>
 
 </div>

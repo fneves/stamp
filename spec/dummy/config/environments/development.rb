@@ -26,4 +26,25 @@ Dummy::Application.configure do
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
+
+  config.after_initialize do
+    ActiveMerchant::Billing::Base.mode = :test
+    ::GATEWAY = ActiveMerchant::Billing::PaypalGateway.new(
+      :login => "seller-jm83_api1.gmail.com",
+      :password => "1397516063",
+      :signature => "AFcWxV21C7fd0v3bYYYRCpSSRl31Axn4.3sdFMZB8X1grvQsMUe2gcVP"
+    )
+  end
+
+
+  # config.after_initialize do
+  #   ActiveMerchant::Billing::Base.mode = :test
+  #   paypal_options = {
+  #     login: "API Username",
+  #     password: "API Password",
+  #     signature: "Signature"
+  #   }
+  #   ::EXPRESS_GATEWAY = ActiveMerchant::Billing::PaypalExpressGateway.new(paypal_options)
+  # end
+
 end

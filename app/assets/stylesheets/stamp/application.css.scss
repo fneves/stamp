@@ -11,8 +11,8 @@
  *= require_self
  * require fullcalendar
  *= require_tree .
- # app/assets/stylesheets/application.css
  *= require formtastic-bootstrap
+ *= require dataTables/jquery.dataTables.bootstrap3
  */
 
 

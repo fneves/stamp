@@ -10,5 +10,32 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery
+//= require jquery_ujs
+//= require dataTables/jquery.dataTables
+// require dataTables/jquery.dataTables.bootstrap
+//= require dataTables/jquery.dataTables.bootstrap3
 // require fullcalendar
 //= require_tree .
+//= require_self
+//= require chartkick
+
+
+$(document).ready(function()
+    {
+        $("#reservation_id").dataTable({
+            sPaginationType: "bootstrap",
+            bProcessing: true,
+            bServerSide: true,
+            sAjaxSource: $('#reservation_id').data('source')
+         });
+
+        $("#pre_reservation_id").dataTable({
+            sPaginationType: "bootstrap",
+            bProcessing: true,
+            bServerSide: true,
+            sAjaxSource: $('#pre_reservation_id').data('source')
+         });
+    }
+);
+
