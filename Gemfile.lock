@@ -100,6 +100,7 @@ GEM
     multi_json (1.9.2)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
+    pg (0.17.1)
     polyglot (0.3.4)
     rack (1.5.2)
     rack-contrib (1.1.0)
@@ -180,6 +181,7 @@ DEPENDENCIES
   jquery-rails
   jquery-ui-rails
   meta_request
+  pg
   rspec-rails
   simplecov
   sqlite3

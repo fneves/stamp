@@ -11,7 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140331213955) do
+ActiveRecord::Schema.define(version: 20140506210811) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "stamp_credit_cards", force: true do |t|
     t.integer  "customer_id"
@@ -55,7 +58,7 @@ ActiveRecord::Schema.define(version: 20140331213955) do
     t.integer  "service_type_id"
   end
 
-  add_index "stamp_service_types", ["service_type_id"], name: "index_stamp_service_types_on_service_type_id"
+  add_index "stamp_service_types", ["service_type_id"], name: "index_stamp_service_types_on_service_type_id", using: :btree
 
   create_table "stamp_services", force: true do |t|
     t.integer  "owner_id"

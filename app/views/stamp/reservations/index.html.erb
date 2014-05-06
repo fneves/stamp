@@ -22,7 +22,7 @@
 <!-- Fábio - just a test case- we should apply this to search menu and use PostgreSQL
 to use group_by_* (groupdate gem)
  -->
-<%#= column_chart Stamp::Reservation.group_by_month(:created_at).count %>
-<%= column_chart ({"Jan" => 1, "Fev" => 2, "Mar" => 1.2, "Abr" => 0.2, "Mai" => 4 }) %>
+<%= data = Stamp::Reservation.group_by_month(:created_at).count %>
+<%= reservation_by_month(data) %>
 
 </div>
